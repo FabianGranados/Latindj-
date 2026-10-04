@@ -17,16 +17,19 @@ const VIGENTES = [
   '/contactanos/',
 ];
 
-// Orden = prioridad. Se busca cada palabra en la ruta (sin tildes, en minúsculas).
+// Orden = prioridad. Cada palabra se compara con el INICIO de cada palabra de la ruta
+// (la ruta se parte por "-", "/" y "_", sin tildes), así "dj" no coincide con "latindj".
 const REGLAS = [
-  ['/alquiler-de-videowall-bogota/', ['pantalla', 'videowall', 'video-wall', 'televisor', 'plasma', '/tv', '-tv']],
-  ['/sonido-e-iluminacion/', ['sonido', 'luces', 'luz', 'iluminacion', 'efecto', 'humo', 'lanzallamas', 'cabeza', 'dj', 'audio', 'venturi', 'truss', 'laser', 'burbuja', 'chispa', 'confeti', 'cortina']],
-  ['/alquiler-de-pistas-de-baile-led-bogota/', ['pista', 'piso', 'led-floor', 'tarima']],
-  ['/sillas-y-mesas-para-eventos/', ['silla', 'mesa', 'mantel', 'tiffany', 'tablon']],
-  ['/alquiler-de-mobiliario-para-eventos/', ['lounge', 'sala', 'puff', 'barra', 'sofa', 'poltrona', 'mobiliario', 'separador']],
+  ['/alquiler-de-videowall-bogota/', ['pantalla', 'videowall', 'televisor', 'plasma', 'tv']],
+  ['/sonido-e-iluminacion/', ['sonido', 'luces', 'luz', 'iluminacion', 'efecto', 'humo', 'lanzallamas', 'cabeza', 'dj', 'audio', 'ventur', 'truss', 'laser', 'cortina', 'cabina', 'bajo', 'consola', 'microfono', 'bose', 'estructura', 'dmx', 'controlador', 'miniteca', 'viejoteca']],
+  ['/alquiler-de-pistas-de-baile-led-bogota/', ['pista', 'piso', 'tarima']],
+  ['/sillas-y-mesas-para-eventos/', ['silla', 'mesa', 'mantel', 'tiffany', 'tyffanny', 'tablon']],
+  ['/alquiler-de-mobiliario-para-eventos/', ['lounge', 'sala', 'puff', 'barra', 'sofa', 'poltrona', 'mobiliario', 'mueble', 'separador', 'ordenadores', 'cheilon']],
   ['/mobiliario-rustico-para-eventos/', ['rustic', 'madera', 'estiba']],
   ['/contactanos/', ['contact']],
 ];
+// "video wall" escrito separado
+const FRASES = [['/alquiler-de-videowall-bogota/', ['video-wall']]];
 
 const sinTildes = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
@@ -48,7 +51,11 @@ function destino(r) {
   const madre = VIGENTES.find((v) => v !== '/' && r.startsWith(v));
   if (madre) return madre;
   const n = sinTildes(r);
-  for (const [dest, palabras] of REGLAS) if (palabras.some((p) => n.includes(p))) return dest;
+  for (const [dest, frases] of FRASES) if (frases.some((f) => n.includes(f))) return dest;
+  const tokens = n.split(/[-/_.]+/).filter(Boolean);
+  for (const [dest, palabras] of REGLAS) {
+    if (palabras.some((p) => tokens.some((t) => t.startsWith(p)))) return dest;
+  }
   return '/';
 }
 
@@ -73,10 +80,14 @@ for (const r of [...rutas].sort()) {
   if (VIGENTES.includes(r)) continue;
   const d = destino(r);
   if (d === r) continue;
-  lineas.push(`${r} ${d} 301`);
   total++;
-  // Variante sin slash final
-  if (r.endsWith('/') && r !== '/') lineas.push(`${r.slice(0, -1)} ${d} 301`);
+  // Cloudflare compara la ruta codificada (ñ → %C3%B1): se emite esa forma, con y sin slash final.
+  // La ñ puede venir compuesta (%C3%B1) o descompuesta (n + %CC%83): se emiten ambas.
+  const formas = new Set([encodeURI(r.normalize('NFC')), encodeURI(r.normalize('NFD'))]);
+  for (const enc of formas) {
+    lineas.push(`${enc} ${d} 301`);
+    if (enc.endsWith('/') && enc !== '/') lineas.push(`${enc.slice(0, -1)} ${d} 301`);
+  }
 }
 
 // Adjuntos de WordPress bajo cada página vigente (p. ej. /alquiler-de-videowall-bogota/pantalla-para-eventos/)
