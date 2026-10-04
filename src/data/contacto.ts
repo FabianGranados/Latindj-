@@ -18,15 +18,15 @@ export const NEGOCIO = {
 export interface Linea {
   /** Número local sin espacios, 10 dígitos */
   numero: string;
-  /** Nombre de la asesora. Déjalo vacío si no se conoce. */
-  asesora: string;
+  /** Nombre visible en la tarjeta (genérico: las personas cambian seguido) */
+  nombre: string;
   principal?: boolean;
 }
 
 export const LINEAS: Linea[] = [
-  { numero: '3108609114', asesora: 'Lorena Rodríguez', principal: true },
-  { numero: '3016003031', asesora: 'Vanessa Camacho' },
-  { numero: '3003108492', asesora: 'Johanna Lugo' },
+  { numero: '3108609114', nombre: 'Asesor 1', principal: true },
+  { numero: '3016003031', nombre: 'Asesor 2' },
+  { numero: '3003108492', nombre: 'Asesor 3' },
 ];
 
 export const HORARIO = [

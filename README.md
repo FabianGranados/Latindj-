@@ -22,7 +22,7 @@ npx wrangler dev   # sirve dist/ igual que en Cloudflare (incluye _redirects y 4
 | `content/original/` | Textos, metadatos y HTML extraídos del WordPress anterior (referencia). |
 | `content/imagenes-manifest.json` | Orden y `alt` originales de cada imagen. |
 | `content/urls-viejas.txt` | URLs viejas que deben redirigir (301). |
-| `src/data/contacto.ts` | **Números de WhatsApp, asesoras, mensajes, horario, redes, mapa y Google Tag.** |
+| `src/data/contacto.ts` | **Números de WhatsApp, asesores, mensajes, horario, redes, mapa y Google Tag.** |
 | `src/assets/<carpeta>/` | Fotos de cada galería. |
 | `src/components/` | Header, Footer, Galería (lightbox), Video YouTube, banda CTA, etc. |
 | `public/_redirects` | Redirecciones 301 (generadas, no editar a mano). |
@@ -34,9 +34,9 @@ Edita `src/data/contacto.ts`:
 
 ```ts
 export const LINEAS = [
-  { numero: '3108609114', asesora: 'Lorena Rodríguez', principal: true },
-  { numero: '3016003031', asesora: 'Vanessa Camacho' },
-  { numero: '3003108492', asesora: 'Johanna Lugo' },
+  { numero: '3108609114', nombre: 'Asesor 1', principal: true },
+  { numero: '3016003031', nombre: 'Asesor 2' },
+  { numero: '3003108492', nombre: 'Asesor 3' },
 ];
 ```
 

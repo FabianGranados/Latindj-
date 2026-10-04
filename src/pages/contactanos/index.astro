@@ -22,8 +22,8 @@ const mapaExterno = `https://www.google.com/maps/search/?api=1&query=${encodeURI
     <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {LINEAS.map((l) => (
         <li class="revelar bg-surface border-border flex flex-col rounded-[22px] border p-7">
-          <p class="etiqueta">{l.principal ? 'Línea principal' : 'Asesora comercial'}</p>
-          <h3 class="mt-3 text-2xl font-black">{l.asesora || 'WhatsApp'}</h3>
+          <p class="etiqueta">{l.principal ? 'Línea principal' : 'Asesoría comercial'}</p>
+          <h3 class="mt-3 text-2xl font-black">{l.nombre}</h3>
           <p class="text-text-muted mt-1 text-lg font-semibold">{formatear(l.numero)}</p>
           <a href={whatsapp(d.whatsapp, l.numero)} target="_blank" rel="noopener" class="btn btn-accent mt-6">
             <Icono nombre="whatsapp" /> Escribir por WhatsApp
