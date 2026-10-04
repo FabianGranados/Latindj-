@@ -27,7 +27,9 @@ const actual = (r: string) => (r === ruta ? 'page' : undefined);
           <button type="button" class:list={['nav-link inline-flex items-center gap-1', enServicio && 'text-accent']} aria-expanded="false" aria-controls="submenu-alquileres">
             Alquileres <Icono nombre="chevron" class="h-4 w-4 transition-transform" />
           </button>
-          <ul id="submenu-alquileres" hidden class="bg-surface border-border absolute top-full left-0 mt-2 w-[300px] rounded-[22px] border p-2 shadow-2xl">
+          <!-- pt-3 en lugar de margen: el área transparente mantiene el hover al bajar el mouse -->
+          <div id="submenu-alquileres" hidden data-panel class="absolute top-full left-0 pt-3">
+          <ul class="bg-surface border-border w-[300px] rounded-[22px] border p-2 shadow-2xl">
             {lista.map((s) => (
               <li>
                 <a href={s.ruta} aria-current={actual(s.ruta)} class="hover:bg-surface-3 aria-[current=page]:text-accent flex min-h-11 items-center rounded-2xl px-4 py-2.5">
@@ -36,6 +38,7 @@ const actual = (r: string) => (r === ruta ? 'page' : undefined);
               </li>
             ))}
           </ul>
+          </div>
         </li>
         <li><a href="/contactanos/" aria-current={actual('/contactanos/')} class="nav-link">Contáctanos</a></li>
       </ul>
@@ -105,14 +108,20 @@ const actual = (r: string) => (r === ruta ? 'page' : undefined);
   // Submenú de escritorio (clic, hover y teclado)
   document.querySelectorAll<HTMLElement>('[data-submenu]').forEach((li) => {
     const btn = li.querySelector('button')!;
-    const sub = li.querySelector('ul')!;
+    const sub = li.querySelector<HTMLElement>('[data-panel]')!;
+    let cierre: ReturnType<typeof setTimeout> | undefined;
     const abrir = (v: boolean) => {
+      clearTimeout(cierre);
       btn.setAttribute('aria-expanded', String(v));
       sub.hidden = !v;
     };
+    const hover = () => matchMedia('(hover: hover)').matches;
     btn.addEventListener('click', () => abrir(btn.getAttribute('aria-expanded') !== 'true'));
-    li.addEventListener('mouseenter', () => matchMedia('(hover: hover)').matches && abrir(true));
-    li.addEventListener('mouseleave', () => matchMedia('(hover: hover)').matches && abrir(false));
+    li.addEventListener('mouseenter', () => hover() && abrir(true));
+    // Pequeña demora al salir para que no se cierre con un movimiento impreciso del mouse
+    li.addEventListener('mouseleave', () => {
+      if (hover()) cierre = setTimeout(() => abrir(false), 250);
+    });
     li.addEventListener('focusout', (e) => {
       if (!li.contains(e.relatedTarget as Node)) abrir(false);
     });
