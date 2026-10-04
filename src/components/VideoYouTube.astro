@@ -1,0 +1,27 @@
+---
+import Icono from './Icono.astro';
+interface Props { id: string; titulo: string }
+const { id, titulo } = Astro.props;
+---
+<div class="bg-surface-2 border-border relative aspect-video overflow-hidden rounded-[22px] border" data-yt={id} data-titulo={titulo}>
+  <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" decoding="async" class="h-full w-full object-cover opacity-80" />
+  <button type="button" class="group absolute inset-0 flex items-center justify-center" aria-label={`Reproducir video: ${titulo}`}>
+    <span class="bg-accent text-on-accent group-hover:bg-accent-hover inline-flex h-16 w-16 items-center justify-center rounded-full shadow-[var(--shadow-glow)] transition-colors">
+      <Icono nombre="play" class="ml-1 h-7 w-7" />
+    </span>
+  </button>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-yt]').forEach((caja) => {
+    caja.querySelector('button')!.addEventListener('click', () => {
+      const f = document.createElement('iframe');
+      f.src = `https://www.youtube-nocookie.com/embed/${caja.dataset.yt}?autoplay=1&rel=0`;
+      f.title = caja.dataset.titulo!;
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+      f.className = 'absolute inset-0 h-full w-full';
+      caja.replaceChildren(f);
+    }, { once: true });
+  });
+</script>

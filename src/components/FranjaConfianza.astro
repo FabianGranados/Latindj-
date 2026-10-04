@@ -1,0 +1,21 @@
+---
+import Icono from './Icono.astro';
+const puntos = [
+  { icono: 'montaje', texto: 'Montaje y desmontaje incluido' },
+  { icono: 'eventos', texto: 'Eventos sociales y empresariales' },
+  { icono: 'audio', texto: 'Equipos profesionales de audio y luz' },
+  { icono: 'chat', texto: 'Atención directa por WhatsApp' },
+] as const;
+---
+<section aria-label="Por qué elegirnos" class="border-divider mt-20 border-y">
+  <ul class="contenedor grid grid-cols-1 gap-x-8 gap-y-5 py-8 sm:grid-cols-2 lg:grid-cols-4">
+    {puntos.map((p) => (
+      <li class="text-text flex items-center gap-3 font-semibold">
+        <span class="bg-surface border-border text-accent inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border">
+          <Icono nombre={p.icono} class="h-5 w-5" />
+        </span>
+        {p.texto}
+      </li>
+    ))}
+  </ul>
+</section>

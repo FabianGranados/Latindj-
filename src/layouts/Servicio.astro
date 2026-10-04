@@ -1,0 +1,81 @@
+---
+import { render } from 'astro:content';
+import { Picture } from 'astro:assets';
+import Base from './Base.astro';
+import Icono from '../components/Icono.astro';
+import Galeria from '../components/Galeria.astro';
+import VideoYouTube from '../components/VideoYouTube.astro';
+import GrillaServicios from '../components/GrillaServicios.astro';
+import BandaCTA from '../components/BandaCTA.astro';
+import { pagina, servicios } from '../lib/paginas';
+import { galeria } from '../lib/imagenes';
+import { whatsapp } from '../data/contacto';
+
+interface Props { id: string }
+const p = await pagina(Astro.props.id);
+const d = p.data;
+const { Content } = await render(p);
+const fotos = galeria(d.carpeta!);
+const [principal] = fotos;
+const otros = (await servicios()).filter((s) => s.ruta !== d.ruta);
+---
+<Base title={d.title} description={d.description} ruta={d.ruta} og={d.og} whatsapp={d.whatsapp} servicio={{ nombre: d.nombre!, descripcion: d.description }}>
+  <section class="contenedor pt-10 sm:pt-16">
+    <nav aria-label="Ruta de navegación" class="text-text-subtle mb-8 text-sm">
+      <ol class="flex flex-wrap items-center gap-2">
+        <li><a href="/" class="hover:text-accent">Inicio</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-text-muted">{d.nombre}</li>
+      </ol>
+    </nav>
+    <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+      <div>
+        <p class="etiqueta">{d.etiqueta}</p>
+        <h1 class="h1 mt-4">{d.h1}</h1>
+        <p class="text-text-muted mt-6 max-w-xl text-lg sm:text-[19px]">{d.intro}</p>
+        <a href={whatsapp(d.whatsapp)} target="_blank" rel="noopener" class="btn btn-accent mt-8">
+          <Icono nombre="whatsapp" /> Cotizar por WhatsApp
+        </a>
+      </div>
+      {principal && (
+        <div class="bg-surface-2 border-border overflow-hidden rounded-[28px] border shadow-[var(--shadow-glow)]">
+          <Picture formats={["avif", "webp"]} pictureAttributes={{ class: "contents" }}
+            src={principal.src}
+            alt={principal.alt}
+            widths={[400, 700, principal.src.width].filter((w, i, a) => w <= principal.src.width && a.indexOf(w) === i)}
+            sizes="(min-width: 1024px) 560px, 100vw"
+            loading="eager"
+            fetchpriority="high"
+            class="h-auto w-full"
+          />
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="contenedor mt-20">
+    <div class="prosa max-w-4xl">
+      <Content />
+    </div>
+  </section>
+
+  {fotos.length > 0 && <Galeria fotos={fotos} titulo={`Fotos de ${d.nombre!.toLowerCase()}`} />}
+
+  {d.videos.length > 0 && (
+    <section class="contenedor mt-20" aria-labelledby="videos-titulo">
+      <p class="etiqueta">Videos</p>
+      <h2 id="videos-titulo" class="h2 mt-3">Mira cómo se vive</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-2">
+        {d.videos.map((v) => <VideoYouTube id={v.id} titulo={v.titulo} />)}
+      </div>
+    </section>
+  )}
+
+  <section class="contenedor mt-24" aria-labelledby="otros-titulo">
+    <p class="etiqueta">Alquileres</p>
+    <h2 id="otros-titulo" class="h2 mt-3">Otros servicios</h2>
+    <div class="mt-10"><GrillaServicios servicios={otros} /></div>
+  </section>
+
+  <BandaCTA mensaje={d.whatsapp} />
+</Base>

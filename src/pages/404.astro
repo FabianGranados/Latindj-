@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Icono from '../components/Icono.astro';
+import GrillaServicios from '../components/GrillaServicios.astro';
+import { servicios } from '../lib/paginas';
+import { whatsapp, MENSAJES } from '../data/contacto';
+const lista = await servicios();
+---
+<Base title="Página no encontrada | Latin DJ" description="La página que buscas no existe. Mira nuestros servicios de alquiler para eventos en Bogotá." ruta="/404/" og="inicio" noindex>
+  <section class="contenedor pt-16 text-center sm:pt-24">
+    <p class="etiqueta">Error 404</p>
+    <h1 class="h1 mx-auto mt-4 max-w-3xl">Esta página se fue de fiesta</h1>
+    <p class="text-text-muted mx-auto mt-6 max-w-xl text-lg">
+      No encontramos lo que buscas. Vuelve al inicio o escríbenos por WhatsApp y te ayudamos con tu evento.
+    </p>
+    <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+      <a href="/" class="btn btn-accent">Ir al inicio</a>
+      <a href={whatsapp(MENSAJES.general)} target="_blank" rel="noopener" class="btn btn-outline">
+        <Icono nombre="whatsapp" /> Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+  <section class="contenedor mt-24" aria-labelledby="s404">
+    <h2 id="s404" class="h2">Nuestros servicios</h2>
+    <div class="mt-10"><GrillaServicios servicios={lista} /></div>
+  </section>
+</Base>

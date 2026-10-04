@@ -1,0 +1,61 @@
+---
+import { Picture } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Icono from '../components/Icono.astro';
+import FranjaConfianza from '../components/FranjaConfianza.astro';
+import GrillaServicios from '../components/GrillaServicios.astro';
+import BandaCTA from '../components/BandaCTA.astro';
+import { pagina, servicios } from '../lib/paginas';
+import { imagen } from '../lib/imagenes';
+import { whatsapp, MENSAJES } from '../data/contacto';
+
+const { data: d } = await pagina('inicio');
+const lista = await servicios();
+const hero = imagen('pistas-led', 'pistas-de-baile-en-bogota.webp');
+---
+<Base title={d.title} description={d.description} ruta={d.ruta} og={d.og}>
+  <section class="contenedor pt-10 sm:pt-16 lg:pt-20">
+    <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+      <div>
+        <p class="etiqueta">{d.etiqueta}</p>
+        <h1 class="h1 mt-4">{d.h1}</h1>
+        <p class="text-text-muted mt-6 max-w-xl text-lg sm:text-[19px]">{d.intro}</p>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsapp(MENSAJES.general)} target="_blank" rel="noopener" class="btn btn-accent">
+            <Icono nombre="whatsapp" /> Cotizar ahora
+          </a>
+          <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div aria-hidden="true" class="bg-accent/20 absolute -inset-6 -z-10 rounded-full blur-3xl"></div>
+        <div class="bg-surface-2 border-border overflow-hidden rounded-[28px] border shadow-[var(--shadow-glow)]">
+          <Picture formats={["avif", "webp"]} pictureAttributes={{ class: "contents" }}
+            src={hero.src}
+            alt={hero.alt}
+            widths={[400, 700]}
+            sizes="(min-width: 1024px) 560px, 100vw"
+            loading="eager"
+            fetchpriority="high"
+            class="h-auto w-full"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FranjaConfianza />
+
+  <section id="servicios" class="contenedor mt-24" aria-labelledby="servicios-titulo">
+    <div class="max-w-2xl">
+      <p class="etiqueta">Alquileres</p>
+      <h2 id="servicios-titulo" class="h2 mt-3">Nuestros servicios</h2>
+      <p class="text-text-muted mt-4 text-lg">
+        Todo lo que tu evento necesita en un solo lugar: mobiliario, pantallas, sonido, iluminación y pistas de baile LED en Bogotá.
+      </p>
+    </div>
+    <div class="mt-12"><GrillaServicios servicios={lista} /></div>
+  </section>
+
+  <BandaCTA />
+</Base>

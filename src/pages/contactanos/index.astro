@@ -1,0 +1,83 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icono from '../../components/Icono.astro';
+import BandaCTA from '../../components/BandaCTA.astro';
+import { pagina } from '../../lib/paginas';
+import { NEGOCIO, LINEAS, REDES, formatear, whatsapp } from '../../data/contacto';
+
+const { data: d } = await pagina('contactanos');
+const direccionMapa = `${NEGOCIO.direccion}, ${NEGOCIO.ciudad}, Colombia`;
+const mapa = `https://www.google.com/maps?q=${encodeURIComponent(direccionMapa)}&output=embed`;
+const mapaExterno = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(direccionMapa)}`;
+---
+<Base title={d.title} description={d.description} ruta={d.ruta} og={d.og} whatsapp={d.whatsapp}>
+  <section class="contenedor pt-10 sm:pt-16">
+    <p class="etiqueta">{d.etiqueta}</p>
+    <h1 class="h1 mt-4">{d.h1}</h1>
+    <p class="text-text-muted mt-6 max-w-2xl text-lg sm:text-[19px]">{d.intro}</p>
+  </section>
+
+  <section class="contenedor mt-14" aria-labelledby="lineas-titulo">
+    <h2 id="lineas-titulo" class="sr-only">Líneas de WhatsApp</h2>
+    <ul class="grid gap-6 md:grid-cols-3">
+      {LINEAS.map((l) => (
+        <li class="revelar bg-surface border-border flex flex-col rounded-[22px] border p-7">
+          <p class="etiqueta">{l.principal ? 'Línea principal' : 'Asesoría comercial'}</p>
+          <p class="mt-3 text-2xl font-black">{l.asesora || 'WhatsApp'}</p>
+          <p class="text-text-muted mt-1 text-lg font-semibold">{formatear(l.numero)}</p>
+          <a href={whatsapp(d.whatsapp, l.numero)} target="_blank" rel="noopener" class="btn btn-accent mt-6">
+            <Icono nombre="whatsapp" /> Escribir por WhatsApp
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="contenedor mt-16 grid gap-6 lg:grid-cols-[1fr_1.4fr]" aria-labelledby="visitanos-titulo">
+    <div class="bg-surface border-border rounded-[28px] border p-8">
+      <p class="etiqueta">Visítanos</p>
+      <h2 id="visitanos-titulo" class="mt-3 text-3xl font-black">Dirección</h2>
+      <p class="text-text-muted mt-4 flex gap-3 text-lg">
+        <Icono nombre="ubicacion" class="text-accent mt-1 h-6 w-6 shrink-0" />
+        <span>{NEGOCIO.direccion}<br />{NEGOCIO.barrio} · {NEGOCIO.ciudad}</span>
+      </p>
+      <a href={mapaExterno} target="_blank" rel="noopener" class="btn btn-outline mt-6">Abrir en Google Maps</a>
+      <h2 class="mt-10 text-xl font-extrabold">Síguenos</h2>
+      <ul class="mt-4 flex gap-2">
+        {REDES.map((r) => (
+          <li>
+            <a href={r.url} target="_blank" rel="noopener" aria-label={r.nombre} class="border-border text-text-muted hover:border-accent hover:text-accent inline-flex h-12 w-12 items-center justify-center rounded-full border transition-colors">
+              <Icono nombre={r.icono} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="bg-surface-2 border-border relative min-h-[360px] overflow-hidden rounded-[28px] border" data-mapa={mapa}>
+      <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8 text-center">
+        <span class="bg-accent/15 text-accent inline-flex h-16 w-16 items-center justify-center rounded-full">
+          <Icono nombre="ubicacion" class="h-8 w-8" />
+        </span>
+        <p class="text-text-muted max-w-xs">{NEGOCIO.direccion}, {NEGOCIO.ciudad}</p>
+        <button type="button" class="btn btn-accent">Cargar mapa</button>
+      </div>
+    </div>
+  </section>
+
+  <BandaCTA mensaje={d.whatsapp} />
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-mapa]').forEach((caja) => {
+    caja.querySelector('button')!.addEventListener('click', () => {
+      const f = document.createElement('iframe');
+      f.src = caja.dataset.mapa!;
+      f.title = 'Mapa de ubicación de Latin Audiovisuales';
+      f.loading = 'lazy';
+      f.referrerPolicy = 'no-referrer-when-downgrade';
+      f.className = 'absolute inset-0 h-full w-full border-0';
+      caja.replaceChildren(f);
+    }, { once: true });
+  });
+</script>

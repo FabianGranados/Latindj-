@@ -1,0 +1,143 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo/logo-latin-claro.png';
+import Icono from './Icono.astro';
+import { servicios } from '../lib/paginas';
+import { whatsapp as wa, MENSAJES } from '../data/contacto';
+
+interface Props {
+  ruta: string;
+  whatsapp?: string;
+}
+const { ruta, whatsapp = MENSAJES.general } = Astro.props;
+const lista = await servicios();
+const enServicio = lista.some((s) => s.ruta === ruta);
+const actual = (r: string) => (r === ruta ? 'page' : undefined);
+---
+<header id="cabecera" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-[background-color,border-color,backdrop-filter] duration-300">
+  <div class="contenedor flex h-[76px] items-center justify-between gap-4">
+    <a href="/" class="flex shrink-0 items-center" aria-label="Latin Audiovisuales — Inicio">
+      <Image src={logo} alt="Logo Latin DJ" width={132} densities={[1, 2]} loading="eager" class="h-auto w-[116px] sm:w-[132px]" />
+    </a>
+
+    <nav aria-label="Principal" class="hidden lg:block">
+      <ul class="flex items-center gap-1 text-[15px] font-semibold">
+        <li><a href="/" aria-current={actual('/')} class="nav-link">Inicio</a></li>
+        <li class="relative" data-submenu>
+          <button type="button" class:list={['nav-link inline-flex items-center gap-1', enServicio && 'text-accent']} aria-expanded="false" aria-controls="submenu-alquileres">
+            Alquileres <Icono nombre="chevron" class="h-4 w-4 transition-transform" />
+          </button>
+          <ul id="submenu-alquileres" hidden class="bg-surface border-border absolute top-full left-0 mt-2 w-[300px] rounded-[22px] border p-2 shadow-2xl">
+            {lista.map((s) => (
+              <li>
+                <a href={s.ruta} aria-current={actual(s.ruta)} class="hover:bg-surface-3 aria-[current=page]:text-accent flex min-h-11 items-center rounded-2xl px-4 py-2.5">
+                  {s.nombre}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+        <li><a href="/contactanos/" aria-current={actual('/contactanos/')} class="nav-link">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href={wa(whatsapp)} class="btn btn-accent hidden !min-h-11 !px-5 !text-[15px] sm:inline-flex" target="_blank" rel="noopener">
+        <Icono nombre="whatsapp" class="h-5 w-5" /> Cotizar por WhatsApp
+      </a>
+      <button id="abrir-menu" type="button" class="text-text hover:text-accent inline-flex h-12 w-12 items-center justify-center rounded-full lg:hidden" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+        <Icono nombre="menu" class="h-7 w-7" />
+      </button>
+    </div>
+  </div>
+
+  <div id="menu-movil" hidden class="bg-bg fixed inset-0 z-50 overflow-y-auto lg:hidden">
+    <div class="contenedor flex h-[76px] items-center justify-between">
+      <a href="/" aria-label="Latin Audiovisuales — Inicio">
+        <Image src={logo} alt="Logo Latin DJ" width={116} densities={[1, 2]} class="h-auto w-[116px]" />
+      </a>
+      <button id="cerrar-menu" type="button" class="text-text hover:text-accent inline-flex h-12 w-12 items-center justify-center rounded-full" aria-label="Cerrar menú">
+        <Icono nombre="cerrar" class="h-7 w-7" />
+      </button>
+    </div>
+    <nav aria-label="Móvil" class="contenedor pt-6 pb-12">
+      <ul class="space-y-1 text-2xl font-extrabold">
+        <li><a href="/" aria-current={actual('/')} class="menu-movil-link">Inicio</a></li>
+        <li class="etiqueta !text-text-subtle pt-6 pb-2">Alquileres</li>
+        {lista.map((s) => (
+          <li><a href={s.ruta} aria-current={actual(s.ruta)} class="menu-movil-link">{s.nombre}</a></li>
+        ))}
+        <li class="pt-4"><a href="/contactanos/" aria-current={actual('/contactanos/')} class="menu-movil-link">Contáctanos</a></li>
+      </ul>
+      <a href={wa(whatsapp)} class="btn btn-accent mt-10 w-full" target="_blank" rel="noopener">
+        <Icono nombre="whatsapp" /> Cotizar por WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+<div class="h-[76px]" aria-hidden="true"></div>
+
+<style>
+  @reference "../styles/global.css";
+  .nav-link {
+    @apply hover:text-accent aria-[current=page]:text-accent inline-flex min-h-11 items-center rounded-full px-4;
+  }
+  .menu-movil-link {
+    @apply border-divider hover:text-accent aria-[current=page]:text-accent flex min-h-14 items-center border-b;
+  }
+  #cabecera.con-fondo {
+    background-color: rgb(14 13 18 / 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-color: var(--color-divider);
+  }
+  [data-submenu] button[aria-expanded='true'] svg {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  const cabecera = document.getElementById('cabecera')!;
+  const fondo = () => cabecera.classList.toggle('con-fondo', scrollY > 8);
+  fondo();
+  addEventListener('scroll', fondo, { passive: true });
+
+  // Submenú de escritorio (clic, hover y teclado)
+  document.querySelectorAll<HTMLElement>('[data-submenu]').forEach((li) => {
+    const btn = li.querySelector('button')!;
+    const sub = li.querySelector('ul')!;
+    const abrir = (v: boolean) => {
+      btn.setAttribute('aria-expanded', String(v));
+      sub.hidden = !v;
+    };
+    btn.addEventListener('click', () => abrir(btn.getAttribute('aria-expanded') !== 'true'));
+    li.addEventListener('mouseenter', () => matchMedia('(hover: hover)').matches && abrir(true));
+    li.addEventListener('mouseleave', () => matchMedia('(hover: hover)').matches && abrir(false));
+    li.addEventListener('focusout', (e) => {
+      if (!li.contains(e.relatedTarget as Node)) abrir(false);
+    });
+    li.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        abrir(false);
+        btn.focus();
+      }
+    });
+  });
+
+  // Menú móvil a pantalla completa
+  const panel = document.getElementById('menu-movil')!;
+  const abrirBtn = document.getElementById('abrir-menu')!;
+  const cerrarBtn = document.getElementById('cerrar-menu')!;
+  const setMenu = (v: boolean) => {
+    panel.hidden = !v;
+    abrirBtn.setAttribute('aria-expanded', String(v));
+    document.documentElement.style.overflow = v ? 'hidden' : '';
+    (v ? cerrarBtn : abrirBtn).focus();
+  };
+  abrirBtn.addEventListener('click', () => setMenu(true));
+  cerrarBtn.addEventListener('click', () => setMenu(false));
+  panel.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+  });
+  panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+</script>

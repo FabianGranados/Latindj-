@@ -1,0 +1,15 @@
+---
+import Icono from './Icono.astro';
+import { whatsapp, MENSAJES } from '../data/contacto';
+interface Props { mensaje?: string }
+const { mensaje = MENSAJES.general } = Astro.props;
+---
+<a
+  href={whatsapp(mensaje)}
+  target="_blank"
+  rel="noopener"
+  aria-label="Escríbenos por WhatsApp"
+  class="bg-whatsapp fixed right-4 bottom-4 z-40 inline-flex h-14 w-14 items-center justify-center rounded-full text-[#0E0D12] shadow-[0_10px_30px_rgba(0,0,0,.45)] transition-transform hover:scale-105 sm:right-6 sm:bottom-6 sm:h-16 sm:w-16"
+>
+  <Icono nombre="whatsapp" class="h-8 w-8" />
+</a>

@@ -1,0 +1,112 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import Icono from './Icono.astro';
+import type { Foto } from '../lib/imagenes';
+interface Props { fotos: Foto[]; titulo?: string }
+const { fotos, titulo = 'Galería' } = Astro.props;
+const grandes = await Promise.all(
+  fotos.map((f) => getImage({ src: f.src, width: Math.min(f.src.width, 1600), format: 'webp' })),
+);
+---
+<section class="contenedor mt-20" aria-labelledby="galeria-titulo" data-galeria>
+  <p class="etiqueta">Galería</p>
+  <h2 id="galeria-titulo" class="h2 mt-3">{titulo}</h2>
+  <ul class="mt-10 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>li]:mb-4">
+    {fotos.map((f, i) => (
+      <li class="break-inside-avoid">
+        <button
+          type="button"
+          class="group bg-surface-2 border-border hover:border-accent block w-full overflow-hidden rounded-[22px] border transition-colors"
+          data-indice={i}
+          data-src={grandes[i].src}
+          data-alt={f.alt}
+          aria-label={`Ampliar foto: ${f.alt}`}
+        >
+          <Picture formats={["avif", "webp"]} pictureAttributes={{ class: "contents" }}
+            src={f.src}
+            alt={f.alt}
+            widths={[400, 700]}
+            sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+            class="h-auto w-full transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </button>
+      </li>
+    ))}
+  </ul>
+
+  <dialog class="visor m-0 h-dvh max-h-none w-screen max-w-none bg-transparent p-0 backdrop:bg-black/90" aria-label="Visor de fotos">
+    <div class="relative flex h-full w-full items-center justify-center p-4 sm:p-16">
+      <figure class="flex max-h-full flex-col items-center">
+        <img class="visor-img max-h-[80dvh] w-auto max-w-full rounded-[22px] object-contain" alt="" decoding="async" />
+        <figcaption class="visor-pie text-text-muted mt-4 text-center text-sm first-letter:uppercase"></figcaption>
+      </figure>
+      <button type="button" class="visor-cerrar bg-surface/80 text-text hover:text-accent absolute top-4 right-4 inline-flex h-12 w-12 items-center justify-center rounded-full" aria-label="Cerrar">
+        <Icono nombre="cerrar" class="h-6 w-6" />
+      </button>
+      <button type="button" class="visor-ant bg-surface/80 text-text hover:text-accent absolute left-3 inline-flex h-12 w-12 items-center justify-center rounded-full sm:left-6" aria-label="Foto anterior">
+        <Icono nombre="izquierda" class="h-6 w-6" />
+      </button>
+      <button type="button" class="visor-sig bg-surface/80 text-text hover:text-accent absolute right-3 inline-flex h-12 w-12 items-center justify-center rounded-full sm:right-6" aria-label="Foto siguiente">
+        <Icono nombre="derecha" class="h-6 w-6" />
+      </button>
+      <p class="visor-contador text-text-subtle absolute bottom-4 left-1/2 -translate-x-1/2 text-sm" aria-live="polite"></p>
+    </div>
+  </dialog>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-galeria]').forEach((galeria) => {
+    const botones = [...galeria.querySelectorAll<HTMLButtonElement>('button[data-indice]')];
+    const dialog = galeria.querySelector('dialog')!;
+    const img = dialog.querySelector<HTMLImageElement>('.visor-img')!;
+    const pie = dialog.querySelector('.visor-pie')!;
+    const contador = dialog.querySelector('.visor-contador')!;
+    let actual = 0;
+    let origen: HTMLElement | null = null;
+
+    const mostrar = (i: number) => {
+      actual = (i + botones.length) % botones.length;
+      const b = botones[actual];
+      img.src = b.dataset.src!;
+      img.alt = b.dataset.alt!;
+      pie.textContent = b.dataset.alt!;
+      contador.textContent = `${actual + 1} / ${botones.length}`;
+    };
+
+    botones.forEach((b, i) =>
+      b.addEventListener('click', () => {
+        origen = b;
+        mostrar(i);
+        dialog.showModal();
+      }),
+    );
+    dialog.querySelector('.visor-cerrar')!.addEventListener('click', () => dialog.close());
+    dialog.querySelector('.visor-ant')!.addEventListener('click', () => mostrar(actual - 1));
+    dialog.querySelector('.visor-sig')!.addEventListener('click', () => mostrar(actual + 1));
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog || (e.target as HTMLElement).matches('.relative')) dialog.close();
+    });
+    dialog.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') mostrar(actual - 1);
+      if (e.key === 'ArrowRight') mostrar(actual + 1);
+    });
+    dialog.addEventListener('close', () => {
+      img.removeAttribute('src');
+      origen?.focus();
+    });
+
+    // Swipe táctil
+    let x0: number | null = null;
+    dialog.addEventListener('touchstart', (e) => (x0 = e.touches[0].clientX), { passive: true });
+    dialog.addEventListener(
+      'touchend',
+      (e) => {
+        if (x0 === null) return;
+        const dx = e.changedTouches[0].clientX - x0;
+        if (Math.abs(dx) > 45) mostrar(actual + (dx < 0 ? 1 : -1));
+        x0 = null;
+      },
+      { passive: true },
+    );
+  });
+</script>

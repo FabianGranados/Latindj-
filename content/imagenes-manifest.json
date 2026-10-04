@@ -1,0 +1,1521 @@
+{
+  "sitio": "https://ltndj.com",
+  "generado": "2026-10-04T15:26:25.019Z",
+  "nota": "Originales a máxima resolución desde /wp-content/uploads/. Cada carpeta = imágenes encontradas en el HTML de esa página, en orden de aparición (incluye logo/header/footer compartidos). _no-usadas-en-paginas = resto de la biblioteca de medios.",
+  "paginas": {
+    "inicio": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-tarimas-y-pisos-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-tarimas-y-pisos-para-eventos.jpg",
+        "alt": "alquiler de tarimas y pisos para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "alquiler-de-pantallas-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pantallas-para-eventos-bogota.jpg",
+        "alt": "alquiler de pantallas para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-sillas-para-conferencias-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Alquiler-de-sillas-para-conferencias-en-bogota.jpg",
+        "alt": "Alquiler de sillas para conferencias en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "sala-lounge-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/sala-lounge-para-eventos-en-bogota.jpg",
+        "alt": "sala lounge para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "renta-salas-en-madera-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/renta-salas-en-madera-eventos-bogota.jpg",
+        "alt": "renta salas en madera eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "alquiler-de-mesas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-en-bogota.jpg",
+        "alt": "alquiler de mesas en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "alquiler-de-tarimas-y-pisos-para-eventos.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/alquiler-de-tarimas-y-pisos-para-eventos.webp",
+        "alt": "alquiler de tarimas y pisos para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "alquiler-de-salas-rusticas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/Alquiler-de-salas-rusticas-para-eventos-en-bogota.jpg",
+        "alt": "Alquiler de salas rusticas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "sonido-e-iluminacion-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/sonido-e-iluminacion-para-eventos.jpg",
+        "alt": "sonido e iluminación para eventos",
+        "ancho": 700,
+        "alto": 450
+      }
+    ],
+    "mobiliario-lounge": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-sala-lounge-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-sala-lounge-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de sala lounge para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "salas-negras-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Salas-negras-para-eventos-bogota.jpg",
+        "alt": "Salas negras para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-poltrona-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-poltrona-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de poltrona para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "alquiler-de-tablones-con-lycra-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-tablones-con-lycra-para-eventos.jpg",
+        "alt": "alquiler de tablones con lycra para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "mesas-y-sillas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/mesas-y-sillas-para-eventos-en-bogota.jpg",
+        "alt": "mesas y sillas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "mesa-alta-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/mesa-alta-para-eventos-en-bogota.jpg",
+        "alt": "mesa alta para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "manteles-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/manteles-para-eventos-en-bogota.jpg",
+        "alt": "manteles para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "alquiler-de-sala-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-sala-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de sala para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "alquiler-de-sala-negra-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-sala-negra-para-eventos.jpg",
+        "alt": "alquiler de sala negra para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "portrona-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/portrona-para-eventos-en-bogota.jpg",
+        "alt": "portrona para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 13,
+        "archivo": "alquiler-de-tablones-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-tablones-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de tablones para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 14,
+        "archivo": "alquiler-de-mesas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-en-bogota.jpg",
+        "alt": "alquiler de mesas en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 15,
+        "archivo": "alquiler-de-mesas-altas-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-altas-para-eventos.jpg",
+        "alt": "alquiler de mesas altas para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "mesa-redonda-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/mesa-redonda-para-eventos-en-bogota.jpg",
+        "alt": "mesa redonda para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 17,
+        "archivo": "sala-lounge-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/sala-lounge-para-eventos-en-bogota.jpg",
+        "alt": "sala lounge para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 18,
+        "archivo": "alquiler-de-sala-lounge-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Alquiler-de-sala-lounge-en-bogota.jpg",
+        "alt": "Alquiler de sala lounge en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 19,
+        "archivo": "poltronas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/poltronas-para-eventos-en-bogota.jpg",
+        "alt": "poltronas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 20,
+        "archivo": "tablones-con-lycra-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Tablones-con-lycra-para-eventos-en-bogota.jpg",
+        "alt": "Tablones con lycra para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 21,
+        "archivo": "alquiler-de-mesas-y-sillas-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-para-eventos.jpg",
+        "alt": "alquiler de mesas y sillas para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 22,
+        "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "alt": "alquiler de mesas con mantel para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 23,
+        "archivo": "alquiler-de-sillas-tiffany-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-sillas-tiffany-para-eventos.jpg",
+        "alt": "alquiler de sillas tiffany para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 24,
+        "archivo": "alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de televisores para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 25,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 26,
+        "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mobiliario-led-para-eventos.jpg",
+        "alt": "alquiler de mobiliario led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 27,
+        "archivo": "alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de mesas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 28,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      }
+    ],
+    "mobiliario-rustico": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-salas-en-madera.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-salas-en-madera.jpg",
+        "alt": "alquiler de salas en madera",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "renta-salas-en-madera-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/renta-salas-en-madera-eventos-bogota.jpg",
+        "alt": "renta salas en madera eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-salas-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-salas-bogota.jpg",
+        "alt": "alquiler de salas bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "alquiler-de-salas-rusticas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/Alquiler-de-salas-rusticas-para-eventos-en-bogota.jpg",
+        "alt": "Alquiler de salas rusticas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "renta-de-salas-en-madera-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/renta-de-salas-en-madera-en-bogota.jpg",
+        "alt": "renta de salas en madera en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "alquiler-de-salas-rusticas.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-salas-rusticas.jpg",
+        "alt": "alquiler de salas rusticas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "salas-rusticas-para-fiestas-.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/salas-rusticas-para-fiestas-.jpg",
+        "alt": "salas rusticas para fiestas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "salas-en-madera-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/salas-en-madera-eventos-bogota.jpg",
+        "alt": "salas en madera eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "salas-rusticas-para-fiestas-1-1.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/salas-rusticas-para-fiestas-1-1.jpg",
+        "alt": "salas rusticas para fiestas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de televisores para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 13,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 14,
+        "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mobiliario-led-para-eventos.jpg",
+        "alt": "alquiler de mobiliario led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 15,
+        "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "alt": "alquiler de mesas con mantel para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de mesas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 17,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      }
+    ],
+    "sillas-y-mesas": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      },
+      {
+        "orden": 3,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 4,
+        "archivo": "mesas-y-sillas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/mesas-y-sillas-para-eventos-en-bogota.jpg",
+        "alt": "mesas y sillas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "mesa-alta-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/mesa-alta-para-eventos-en-bogota.jpg",
+        "alt": "mesa alta para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "manteles-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/manteles-para-eventos-en-bogota.jpg",
+        "alt": "manteles para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "alquiler-de-mesas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-en-bogota.jpg",
+        "alt": "alquiler de mesas en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "alquiler-de-mesas-altas-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-altas-para-eventos.jpg",
+        "alt": "alquiler de mesas altas para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "mesa-redonda-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/mesa-redonda-para-eventos-en-bogota.jpg",
+        "alt": "mesa redonda para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "alquiler-de-mesas-y-sillas-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-para-eventos.jpg",
+        "alt": "alquiler de mesas y sillas para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "alt": "alquiler de mesas con mantel para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "alquiler-de-sillas-tiffany-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-sillas-tiffany-para-eventos.jpg",
+        "alt": "alquiler de sillas tiffany para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 13,
+        "archivo": "alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de televisores para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 14,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 15,
+        "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mobiliario-led-para-eventos.jpg",
+        "alt": "alquiler de mobiliario led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de mesas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      }
+    ],
+    "videowall": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-pantallas-led.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-pantallas-led.jpg",
+        "alt": "alquiler de pantallas led",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "alquiler-de-pantallas-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pantallas-para-eventos-bogota.jpg",
+        "alt": "alquiler de pantallas para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-pantallas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-pantallas-en-bogota.jpg",
+        "alt": "alquiler de pantallas en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "alquiler-de-pantallas-de-led.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-pantallas-de-led.jpg",
+        "alt": "alquiler de pantallas de led",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "pantalla-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/pantalla-para-eventos.jpg",
+        "alt": "pantalla para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "pantallas-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/pantallas-led-para-eventos.jpg",
+        "alt": "pantallas led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "alquiler-de-video-wall-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-video-wall-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de video wall para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "precio-alquiler-video-wall.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/precio-alquiler-video-wall.jpg",
+        "alt": "precio alquiler video wall",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "video-wall-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/video-wall-para-eventos.jpg",
+        "alt": "video wall para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "alquiler-de-videowall.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-videowall.jpg",
+        "alt": "alquiler de videowall",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 13,
+        "archivo": "videowall-en-alquiler-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/videowall-en-alquiler-bogota.jpg",
+        "alt": "videowall en alquiler bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 14,
+        "archivo": "alquiler-de-videowall-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-videowall-para-eventos.jpg",
+        "alt": "alquiler de videowall para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 15,
+        "archivo": "alquiler-de-televisores-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/Alquiler-de-televisores-para-eventos.jpg",
+        "alt": "Alquiler de televisores para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "alquiler-de-pantallas-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-pantallas-bogota.jpg",
+        "alt": "alquiler de pantallas bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 17,
+        "archivo": "alquiler-televisores-plasma-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-televisores-plasma-bogota.jpg",
+        "alt": "alquiler televisores plasma bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 18,
+        "archivo": "alquiler-de-televisores-plasmas.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-televisores-plasmas.jpg",
+        "alt": "alquiler de televisores plasmas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 19,
+        "archivo": "alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-televisores-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de televisores para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 20,
+        "archivo": "alquiler-de-televisores-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-televisores-para-eventos-bogota.jpg",
+        "alt": "alquiler de televisores para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 21,
+        "archivo": "sonido-e-iluminacion-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/sonido-e-iluminacion-para-eventos.jpg",
+        "alt": "sonido e iluminación para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 22,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 23,
+        "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mobiliario-led-para-eventos.jpg",
+        "alt": "alquiler de mobiliario led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 24,
+        "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "alt": "alquiler de mesas con mantel para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 25,
+        "archivo": "alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de mesas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 26,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      }
+    ],
+    "sonido-e-iluminacion": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-luces-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/alquiler-de-luces-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de luces para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 4,
+        "archivo": "cabina-de-dj-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/cabina-de-dj-para-eventos-en-bogota.jpg",
+        "alt": "cabina de dj para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 5,
+        "archivo": "luces-para-fiestas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/luces-para-fiestas-en-bogota.jpg",
+        "alt": "luces para fiestas en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 6,
+        "archivo": "luces-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/luces-para-eventos-bogota.jpg",
+        "alt": "luces para eventos bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 7,
+        "archivo": "alquiler-de-bola-de-espejos-para-fiestas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/alquiler-de-bola-de-espejos-para-fiestas-en-bogota.jpg",
+        "alt": "alquiler de bola de espejos para fiestas en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 8,
+        "archivo": "consola-de-dj-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/consola-de-dj-para-eventos-en-bogota.jpg",
+        "alt": "consola de dj para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 9,
+        "archivo": "estructura-truss-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/estructura-truss-para-eventos-en-bogota.jpg",
+        "alt": "estructura truss para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 10,
+        "archivo": "alquiler-de-sonido-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/alquiler-de-sonido-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de sonido para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 11,
+        "archivo": "alquiler-de-sonido-e-iluminacion-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/alquiler-de-sonido-e-iluminacion-para-eventos.jpg",
+        "alt": "alquiler de sonido e iluminacion para eventos",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 12,
+        "archivo": "alquiler-de-maquina-de-humo-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/alquiler-de-maquina-de-humo-para-eventos.jpg",
+        "alt": "alquiler de maquina de humo para eventos",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 13,
+        "archivo": "explosion-venturi-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/explosion-venturi-para-eventos-en-bogota.jpg",
+        "alt": "explosion venturi para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 14,
+        "archivo": "cortina-led-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/cortina-led-para-eventos-en-bogota.jpg",
+        "alt": "cortina led para eventos en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 15,
+        "archivo": "salas-negras-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Salas-negras-para-eventos-bogota.jpg",
+        "alt": "Salas negras para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 17,
+        "archivo": "manteles-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/manteles-para-eventos-en-bogota.jpg",
+        "alt": "manteles para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 18,
+        "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "alt": "alquiler de mesas con mantel para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 19,
+        "archivo": "poltronas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/poltronas-para-eventos-en-bogota.jpg",
+        "alt": "poltronas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 20,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      }
+    ],
+    "pistas-led": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      },
+      {
+        "orden": 3,
+        "archivo": "pistas-de-baile-en-bogota.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/pistas-de-baile-en-bogota.webp",
+        "alt": "pistas de baile en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "alquiler-de-pisos-led-en-bogota.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/alquiler-de-pisos-led-en-bogota.webp",
+        "alt": "alquiler de pisos led en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-pisos-para-eventos-en-bogota.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/alquiler-de-pisos-para-eventos-en-bogota.webp",
+        "alt": "alquiler de pisos para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "alquiler-de-pisos-en-bogota.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/alquiler-de-pisos-en-bogota.webp",
+        "alt": "alquiler de pisos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "renta-de-pistas-de-baile-iluminadas.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/renta-de-pistas-de-baile-iluminadas.webp",
+        "alt": "renta de pistas de baile iluminadas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "alquiler-de-pisos-para-eventos.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/alquiler-de-pisos-para-eventos.webp",
+        "alt": "alquiler de pisos para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "alquiler-de-tarimas-y-pisos-para-eventos.webp",
+        "url_original": "https://ltndj.com/wp-content/uploads/2024/07/alquiler-de-tarimas-y-pisos-para-eventos.webp",
+        "alt": "alquiler de tarimas y pisos para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "alquiler-de-pantallas-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pantallas-para-eventos-bogota.jpg",
+        "alt": "alquiler de pantallas para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-y-sillas-en-madera-bogota.jpg",
+        "alt": "alquiler de mesas y sillas en madera bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "alquiler-de-sillas-para-conferencias-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Alquiler-de-sillas-para-conferencias-en-bogota.jpg",
+        "alt": "Alquiler de sillas para conferencias en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 13,
+        "archivo": "renta-salas-en-madera-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/renta-salas-en-madera-eventos-bogota.jpg",
+        "alt": "renta salas en madera eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 14,
+        "archivo": "alquiler-de-video-wall-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-video-wall-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de video wall para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 15,
+        "archivo": "manteles-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/manteles-para-eventos-en-bogota.jpg",
+        "alt": "manteles para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "portrona-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/portrona-para-eventos-en-bogota.jpg",
+        "alt": "portrona para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      }
+    ],
+    "contactanos": [
+      {
+        "orden": 1,
+        "archivo": "cropped-logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-logo-latindj-140x140-1.png",
+        "alt": "",
+        "ancho": 512,
+        "alto": 512
+      },
+      {
+        "orden": 2,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-tarimas-y-pisos-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-tarimas-y-pisos-para-eventos.jpg",
+        "alt": "alquiler de tarimas y pisos para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "alquiler-de-pantallas-led.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-pantallas-led.jpg",
+        "alt": "alquiler de pantallas led",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mobiliario-led-para-eventos.jpg",
+        "alt": "alquiler de mobiliario led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+        "alt": "alquiler de mesas con mantel para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de mesas para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "cropped-logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 200,
+        "alto": 95
+      }
+    ],
+    "_no-usadas-en-paginas": [
+      {
+        "orden": 1,
+        "archivo": "alquiler-de-televisores-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-televisores-para-eventos-bogota.jpg",
+        "alt": "alquiler de televisores para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 2,
+        "archivo": "alquiler-de-televisores-plasmas.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-televisores-plasmas.jpg",
+        "alt": "alquiler de televisores plasmas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 3,
+        "archivo": "alquiler-de-pantallas-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pantallas-bogota.jpg",
+        "alt": "alquiler de pantallas bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 4,
+        "archivo": "alquiler-de-videowall-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-videowall-para-eventos.jpg",
+        "alt": "alquiler de videowall para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 5,
+        "archivo": "alquiler-de-pisos-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pisos-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de pisos para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 6,
+        "archivo": "alquiler-de-pisos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pisos-en-bogota.jpg",
+        "alt": "alquiler de pisos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 7,
+        "archivo": "alquiler-de-pisos-led-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pisos-led-en-bogota.jpg",
+        "alt": "alquiler de pisos led en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 8,
+        "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-mobiliario-led-para-eventos.jpg",
+        "alt": "alquiler de mobiliario led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 9,
+        "archivo": "renta-de-pistas-de-baile-iluminadas.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/renta-de-pistas-de-baile-iluminadas.jpg",
+        "alt": "renta de pistas de baile iluminadas",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 10,
+        "archivo": "pistas-de-baile-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/pistas-de-baile-en-bogota.jpg",
+        "alt": "pistas de baile en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 11,
+        "archivo": "alquiler-de-pisos-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/alquiler-de-pisos-para-eventos.jpg",
+        "alt": "alquiler de pisos para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 12,
+        "archivo": "pistas-de-baile-led-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/pistas-de-baile-led-para-eventos.jpg",
+        "alt": "pistas de baile led para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 13,
+        "archivo": "alquiler-de-pistas-de-baile-para-eventos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/Alquiler-de-pistas-de-baile-para-eventos-bogota.jpg",
+        "alt": "Alquiler de pistas de baile para eventos bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 14,
+        "archivo": "pistas-de-baile-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/12/pistas-de-baile-para-eventos.jpg",
+        "alt": "pistas de baile para eventos",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 15,
+        "archivo": "alquiler-de-calefactores-de-ambiente-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2023/05/Alquiler-de-calefactores-de-ambiente-para-eventos-en-bogota.jpg",
+        "alt": "Alquiler de calefactores de ambiente para eventos en bogota",
+        "ancho": 700,
+        "alto": 450
+      },
+      {
+        "orden": 16,
+        "archivo": "organizacion-de-fiestas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2020/01/organizacion-de-fiestas-en-bogota.jpg",
+        "alt": "organizacion de fiestas en bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 17,
+        "archivo": "alquiler-de-sonido-para-fiestas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2020/01/alquiler-de-sonido-para-fiestas-en-bogota.jpg",
+        "alt": "alquiler de sonido para fiestas en bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 18,
+        "archivo": "alquiler-de-luces-para-eventos-en-bogota-1.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2020/01/alquiler-de-luces-para-eventos-en-bogota-1.jpg",
+        "alt": "alquiler de luces para eventos en bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 19,
+        "archivo": "alquiler-de-luces-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2020/01/alquiler-de-luces-para-eventos-en-bogota.jpg",
+        "alt": "",
+        "ancho": 1024,
+        "alto": 576
+      },
+      {
+        "orden": 20,
+        "archivo": "alquiler-de-luces-y-sonido-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2020/01/alquiler-de-luces-y-sonido-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de luces y sonido para eventos en bogota",
+        "ancho": 1024,
+        "alto": 576
+      },
+      {
+        "orden": 21,
+        "archivo": "latin-audiovisuales.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/LATIN-AUDIOVISUALES.png",
+        "alt": "LATIN AUDIOVISUALES",
+        "ancho": 3298,
+        "alto": 1571
+      },
+      {
+        "orden": 22,
+        "archivo": "alquiler-de-sonido-e-iluminacio-para-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/12/alquiler-de-sonido-e-iluminacio-para-eventos.jpg",
+        "alt": "alquiler de sonido e iluminacion para eventos",
+        "ancho": 1024,
+        "alto": 576
+      },
+      {
+        "orden": 23,
+        "archivo": "fiestas-de-cumpleanos-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Fiestas-de-cumpleanos-bogota.jpg",
+        "alt": "Fiestas de cumpleanos bogota",
+        "ancho": 1024,
+        "alto": 682
+      },
+      {
+        "orden": 24,
+        "archivo": "fiestas-tematicas-de-15-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Fiestas-tematicas-de-15-en-bogota.jpg",
+        "alt": "Fiestas tematicas de 15 en bogota",
+        "ancho": 1024,
+        "alto": 682
+      },
+      {
+        "orden": 25,
+        "archivo": "fiestas-tematicas-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Fiestas-Tematicas-Bogota.jpg",
+        "alt": "Fiestas Tematicas Bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 26,
+        "archivo": "fiestas-ochenteras-luces-y-sonido-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Fiestas-ochenteras-luces-y-sonido-en-Bogota.jpg",
+        "alt": "Fiestas ochenteras luces y sonido en Bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 27,
+        "archivo": "viejotecas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Viejotecas-en-Bogota.jpg",
+        "alt": "Viejotecas en Bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 28,
+        "archivo": "alquiler-de-sonido-y-luces-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Alquiler-de-sonido-y-luces-en-bogota.jpg",
+        "alt": "Alquiler de sonido y luces en bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 29,
+        "archivo": "sonido-profesional-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Sonido-profesional-bogota.jpg",
+        "alt": "Sonido profesional bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 30,
+        "archivo": "luces-para-fiestas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Luces-para-fiestas-en-bogota.jpg",
+        "alt": "Luces para fiestas en bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 31,
+        "archivo": "chiquitecas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/Chiquitecas-en-bogota.jpg",
+        "alt": "Chiquitecas en bogota",
+        "ancho": 2000,
+        "alto": 1333
+      },
+      {
+        "orden": 32,
+        "archivo": "3108609114-whatsapp.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/3108609114-whatsapp.png",
+        "alt": "3108609114 whatsapp",
+        "ancho": 961,
+        "alto": 339
+      },
+      {
+        "orden": 33,
+        "archivo": "3016003031-whatsapp.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/3016003031-whatsapp.png",
+        "alt": "3016003031 whatsapp",
+        "ancho": 961,
+        "alto": 339
+      },
+      {
+        "orden": 34,
+        "archivo": "3003108492-whatsapp.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/07/3003108492-whatsapp.png",
+        "alt": "3003108492 whatsapp",
+        "ancho": 961,
+        "alto": 339
+      },
+      {
+        "orden": 35,
+        "archivo": "alquiler-de-mobiliario-para-eventos-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/02/alquiler-de-mobiliario-para-eventos-en-bogota.jpg",
+        "alt": "alquiler de mobiliario para eventos en bogota",
+        "ancho": 600,
+        "alto": 600
+      },
+      {
+        "orden": 36,
+        "archivo": "alquiler-de-pistas-de-baile-led-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/02/alquiler-de-pistas-de-baile-led-bogota.jpg",
+        "alt": "alquiler de pistas de baile led bogota",
+        "ancho": 600,
+        "alto": 600
+      },
+      {
+        "orden": 37,
+        "archivo": "alquiler-de-luces-y-sonido-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/02/alquiler-de-luces-y-sonido-en-bogota.jpg",
+        "alt": "alquiler de luces y sonido en bogota",
+        "ancho": 600,
+        "alto": 600
+      },
+      {
+        "orden": 38,
+        "archivo": "alquiler-de-videowall-y-pantallas-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2019/02/alquiler-de-videowall-y-pantallas-en-bogota.jpg",
+        "alt": "alquiler de videowall y pantallas en bogota",
+        "ancho": 600,
+        "alto": 600
+      },
+      {
+        "orden": 39,
+        "archivo": "alquiler-de-luces-y-sonido-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/10/alquiler-de-luces-y-sonido-en-bogota.jpg",
+        "alt": "alquiler de luces y sonido en bogota",
+        "ancho": 750,
+        "alto": 280
+      },
+      {
+        "orden": 40,
+        "archivo": "luces-y-sonido-para-fiestas-y-eventos.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/10/luces-y-sonido-para-fiestas-y-eventos.jpg",
+        "alt": "luces y sonido para fiestas y eventos",
+        "ancho": 750,
+        "alto": 280
+      },
+      {
+        "orden": 41,
+        "archivo": "separadores-de-fila-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/separadores-de-fila-en-bogota.jpg",
+        "alt": "separadores de fila en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 42,
+        "archivo": "alquiler-de-separadores-de-fila-en-bogota.jpg",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/04/alquiler-de-separadores-de-fila-en-bogota.jpg",
+        "alt": "alquiler de separadores de fila en bogota",
+        "ancho": 1024,
+        "alto": 683
+      },
+      {
+        "orden": 43,
+        "archivo": "logo-latin-dj.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/Logo-Latin-DJ.png",
+        "alt": "Logo Latin DJ",
+        "ancho": 2945,
+        "alto": 1411
+      },
+      {
+        "orden": 44,
+        "archivo": "logo-latindj-140x140-1.png",
+        "url_original": "https://ltndj.com/wp-content/uploads/2018/03/logo-latindj-140x140-1.png",
+        "alt": "logotipo latin dj audiovisuales",
+        "ancho": 140,
+        "alto": 140
+      }
+    ]
+  }
+}

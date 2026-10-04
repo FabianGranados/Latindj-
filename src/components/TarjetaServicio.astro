@@ -1,0 +1,28 @@
+---
+import { Picture } from 'astro:assets';
+import Icono from './Icono.astro';
+import type { Servicio } from '../lib/paginas';
+interface Props { servicio: Servicio; nivel?: 'h2' | 'h3' }
+const { servicio: s, nivel = 'h3' } = Astro.props;
+const Titulo = nivel;
+---
+<article class="revelar group bg-surface border-border hover:border-accent relative flex flex-col overflow-hidden rounded-[22px] border transition-[transform,border-color] duration-300 hover:-translate-y-1">
+  <div class="bg-surface-2 aspect-[16/10] overflow-hidden">
+    <Picture formats={["avif", "webp"]} pictureAttributes={{ class: "contents" }}
+      src={s.foto.src}
+      alt={s.foto.alt}
+      widths={[400, 700]}
+      sizes="(min-width: 1024px) 370px, (min-width: 640px) 50vw, 100vw"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+    />
+  </div>
+  <div class="flex flex-1 flex-col p-6">
+    <Titulo class="text-text text-[22px] leading-tight font-extrabold">
+      <a href={s.ruta} class="after:absolute after:inset-0">{s.nombre}</a>
+    </Titulo>
+    <p class="text-text-muted mt-2 flex-1 text-base">{s.resumen}</p>
+    <span class="text-accent mt-5 inline-flex items-center gap-1.5 font-bold" aria-hidden="true">
+      Ver más <Icono nombre="flecha" class="h-4 w-4 transition-transform group-hover:translate-x-1" />
+    </span>
+  </div>
+</article>

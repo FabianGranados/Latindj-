@@ -1,0 +1,149 @@
+@import '@fontsource/archivo/400.css';
+@import '@fontsource/archivo/500.css';
+@import '@fontsource/archivo/600.css';
+@import '@fontsource/archivo/800.css';
+@import '@fontsource/archivo/900.css';
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #0e0d12;
+  --color-surface: #17151e;
+  --color-surface-2: #1c1a24;
+  --color-surface-3: #221f2b;
+  --color-border: #26232f;
+  --color-divider: #23202b;
+  --color-text: #f4f1ec;
+  --color-text-muted: #c9c4d2;
+  --color-text-subtle: #a9a4b3;
+  --color-accent: #fd6721;
+  --color-accent-hover: #ff8a50;
+  --color-on-accent: #0e0d12;
+  --color-whatsapp: #25d366;
+
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-card: 22px;
+  --radius-block: 28px;
+
+  --shadow-glow: 0 30px 80px rgba(253, 103, 33, 0.18);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  ::selection {
+    @apply bg-accent text-on-accent;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .contenedor {
+    @apply mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8;
+  }
+  .etiqueta {
+    @apply text-accent uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .h1 {
+    font-size: clamp(2.5rem, 1.6rem + 3.6vw, 4rem);
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+  .h2 {
+    font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-bold transition-colors duration-200;
+  }
+  .btn-accent {
+    @apply bg-accent text-on-accent hover:bg-accent-hover;
+  }
+  .btn-outline {
+    @apply border border-border text-text hover:border-accent hover:text-accent;
+  }
+  .btn-dark {
+    @apply bg-bg text-text hover:bg-surface;
+  }
+  .prosa {
+    @apply text-text-muted;
+    font-size: 18px;
+  }
+  .prosa h2 {
+    @apply text-text mt-12 mb-4 first:mt-0;
+    font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .prosa h3 {
+    @apply text-text mt-8 mb-3 text-xl font-extrabold;
+  }
+  .prosa p {
+    @apply mb-4;
+  }
+  .prosa ul {
+    @apply mb-6 grid gap-2 sm:grid-cols-2;
+  }
+  .prosa li {
+    @apply bg-surface border-border relative rounded-2xl border py-3 pr-4 pl-11;
+  }
+  .prosa li::before {
+    content: '';
+    @apply bg-accent absolute top-1/2 left-4 h-2.5 w-2.5 -translate-y-1/2 rounded-full;
+  }
+  .prosa strong {
+    @apply text-text;
+  }
+
+  /* Aparición suave al hacer scroll */
+  .revelar {
+    opacity: 1;
+  }
+  .js .revelar {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  .js .revelar.visible {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .js .revelar {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFlotante from '../components/WhatsAppFlotante.astro';
+import { NEGOCIO, LINEAS, REDES } from '../data/contacto';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Ruta con slash final, p. ej. "/sonido-e-iluminacion/" */
+  ruta: string;
+  /** Nombre del archivo en public/og/ (sin extensión) */
+  og: string;
+  /** Si se pasa, agrega JSON-LD de Service + BreadcrumbList */
+  servicio?: { nombre: string; descripcion: string };
+  whatsapp?: string;
+  noindex?: boolean;
+}
+
+const { title, description, ruta, og, servicio, whatsapp, noindex = false } = Astro.props;
+const site = Astro.site!.origin;
+const canonical = new URL(ruta, site).href;
+const ogImage = `${site}/og/${og}.jpg`;
+const negocioId = `${site}/#negocio`;
+
+const negocio = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', 'EntertainmentBusiness'],
+  '@id': negocioId,
+  name: NEGOCIO.nombre,
+  alternateName: NEGOCIO.marca,
+  url: `${site}/`,
+  logo: `${site}/logo-latin-dj.png`,
+  image: `${site}/og/inicio.jpg`,
+  telephone: LINEAS.map((l) => `+57 ${l.numero}`),
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: NEGOCIO.direccion,
+    addressLocality: NEGOCIO.ciudad,
+    addressRegion: NEGOCIO.region,
+    addressCountry: NEGOCIO.pais,
+  },
+  areaServed: { '@type': 'City', name: 'Bogotá' },
+  sameAs: REDES.map((r) => r.url),
+};
+
+const jsonld: object[] = [negocio];
+if (servicio) {
+  jsonld.push(
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: servicio.nombre,
+      description: servicio.descripcion,
+      url: canonical,
+      provider: { '@id': negocioId },
+      areaServed: { '@type': 'City', name: 'Bogotá' },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${site}/` },
+        { '@type': 'ListItem', position: 2, name: servicio.nombre, item: canonical },
+      ],
+    },
+  );
+}
+const gtag = NEGOCIO.googleTag;
+---
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#0E0D12" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Latin DJ · Latin Audiovisuales" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    {jsonld.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d)} />)}
+
+    {gtag && (
+      <script is:inline define:vars={{ gtag }}>
+        // Google tag diferido: se carga tras la primera interacción o 4 s después de 'load'.
+        window.dataLayer = window.dataLayer || [];
+        function g() { dataLayer.push(arguments); }
+        window.gtag = g;
+        g('js', new Date());
+        g('config', gtag);
+        let cargado = false;
+        function cargar() {
+          if (cargado) return;
+          cargado = true;
+          const s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gtag;
+          document.head.appendChild(s);
+        }
+        ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach((e) =>
+          addEventListener(e, cargar, { once: true, passive: true }),
+        );
+        addEventListener('load', () => setTimeout(cargar, 4000));
+      </script>
+    )}
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a href="#contenido" class="btn btn-accent sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60]">
+      Saltar al contenido
+    </a>
+    <Header ruta={ruta} whatsapp={whatsapp} />
+    <main id="contenido" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <WhatsAppFlotante mensaje={whatsapp} />
+
+    <script>
+      // Aparición suave de tarjetas
+      const els = document.querySelectorAll('.revelar');
+      if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const io = new IntersectionObserver(
+          (entradas) => {
+            for (const e of entradas) {
+              if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { rootMargin: '0px 0px -8% 0px' },
+        );
+        els.forEach((el) => io.observe(el));
+      } else {
+        els.forEach((el) => el.classList.add('visible'));
+      }
+    </script>
+  </body>
+</html>
