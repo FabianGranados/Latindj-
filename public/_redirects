@@ -1,0 +1,35 @@
+# Generado por scripts/generar-redirects.mjs — no editar a mano.
+# 5 URLs viejas → páginas nuevas (301).
+
+/80s/ / 301
+/80s / 301
+/alquiler-de-pantallas-en-bogota/ /alquiler-de-videowall-bogota/ 301
+/alquiler-de-pantallas-en-bogota /alquiler-de-videowall-bogota/ 301
+/barras/ /alquiler-de-mobiliario-para-eventos/ 301
+/barras /alquiler-de-mobiliario-para-eventos/ 301
+/contacto/ /contactanos/ 301
+/contacto /contactanos/ 301
+/productos/alquiler-de-efecto-lanzallamas-bogota/ /sonido-e-iluminacion/ 301
+/productos/alquiler-de-efecto-lanzallamas-bogota /sonido-e-iluminacion/ 301
+
+# Adjuntos/subpáginas de WordPress bajo las páginas vigentes
+/alquiler-de-mobiliario-para-eventos/:adjunto/ /alquiler-de-mobiliario-para-eventos/ 301
+/alquiler-de-mobiliario-para-eventos/:adjunto /alquiler-de-mobiliario-para-eventos/ 301
+/mobiliario-rustico-para-eventos/:adjunto/ /mobiliario-rustico-para-eventos/ 301
+/mobiliario-rustico-para-eventos/:adjunto /mobiliario-rustico-para-eventos/ 301
+/sillas-y-mesas-para-eventos/:adjunto/ /sillas-y-mesas-para-eventos/ 301
+/sillas-y-mesas-para-eventos/:adjunto /sillas-y-mesas-para-eventos/ 301
+/alquiler-de-videowall-bogota/:adjunto/ /alquiler-de-videowall-bogota/ 301
+/alquiler-de-videowall-bogota/:adjunto /alquiler-de-videowall-bogota/ 301
+/sonido-e-iluminacion/:adjunto/ /sonido-e-iluminacion/ 301
+/sonido-e-iluminacion/:adjunto /sonido-e-iluminacion/ 301
+/alquiler-de-pistas-de-baile-led-bogota/:adjunto/ /alquiler-de-pistas-de-baile-led-bogota/ 301
+/alquiler-de-pistas-de-baile-led-bogota/:adjunto /alquiler-de-pistas-de-baile-led-bogota/ 301
+/contactanos/:adjunto/ /contactanos/ 301
+/contactanos/:adjunto /contactanos/ 301
+
+# Rutas de WordPress
+/feed/ / 301
+/comments/feed/ / 301
+/wp-login.php / 301
+/wp-admin/ / 301

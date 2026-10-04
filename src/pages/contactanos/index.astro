@@ -19,7 +19,7 @@ const mapaExterno = `https://www.google.com/maps/search/?api=1&query=${encodeURI
 
   <section class="contenedor mt-14" aria-labelledby="lineas-titulo">
     <h2 id="lineas-titulo" class="sr-only">Líneas de WhatsApp</h2>
-    <ul class="grid gap-6 md:grid-cols-3">
+    <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {LINEAS.map((l) => (
         <li class="revelar bg-surface border-border flex flex-col rounded-[22px] border p-7">
           <p class="etiqueta">{l.principal ? 'Línea principal' : 'Asesoría comercial'}</p>

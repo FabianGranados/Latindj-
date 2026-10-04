@@ -1,0 +1,10 @@
+# URLs viejas de ltndj.com que hoy dan 404 y deben redirigir (301).
+# PENDIENTE: pegar aquí la lista completa del sitemap antiguo (https://ltndj.com/sitemap.xml, ~217 URLs)
+# o guardar ese XML como content/sitemap-viejo.xml, y luego correr: npm run redirects
+#
+# Ejemplos conocidos:
+https://ltndj.com/productos/alquiler-de-efecto-lanzallamas-bogota/
+https://ltndj.com/80s/
+https://ltndj.com/barras/
+https://ltndj.com/alquiler-de-pantallas-en-bogota/
+https://ltndj.com/contacto/
