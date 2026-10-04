@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFlotante from '../components/WhatsAppFlotante.astro';
-import { NEGOCIO, LINEAS, REDES } from '../data/contacto';
+import { NEGOCIO, LINEAS, REDES, HORARIO } from '../data/contacto';
 
 interface Props {
   title: string;
@@ -42,7 +42,8 @@ const negocio = {
     addressCountry: NEGOCIO.pais,
   },
   areaServed: { '@type': 'City', name: 'Bogotá' },
-  sameAs: REDES.map((r) => r.url),
+  openingHours: HORARIO.map((h) => h.schema),
+  sameAs: REDES.filter((r) => r.icono !== 'youtube').map((r) => r.url),
 };
 
 const jsonld: object[] = [negocio];

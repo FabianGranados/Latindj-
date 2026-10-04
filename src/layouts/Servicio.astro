@@ -9,7 +9,7 @@ import GrillaServicios from '../components/GrillaServicios.astro';
 import BandaCTA from '../components/BandaCTA.astro';
 import { pagina, servicios } from '../lib/paginas';
 import { galeria } from '../lib/imagenes';
-import { whatsapp } from '../data/contacto';
+import { whatsapp, INSTAGRAM_POSTS } from '../data/contacto';
 
 interface Props { id: string }
 const p = await pagina(Astro.props.id);
@@ -64,10 +64,19 @@ const otros = (await servicios()).filter((s) => s.ruta !== d.ruta);
   {d.videos.length > 0 && (
     <section class="contenedor mt-20" aria-labelledby="videos-titulo">
       <p class="etiqueta">Videos</p>
-      <h2 id="videos-titulo" class="h2 mt-3">Mira cómo se vive</h2>
+      <h2 id="videos-titulo" class="h2 mt-3">Síguenos en redes sociales</h2>
       <div class="mt-10 grid gap-6 md:grid-cols-2">
         {d.videos.map((v) => <VideoYouTube id={v.id} titulo={v.titulo} />)}
       </div>
+      <ul class="mt-6 flex flex-wrap gap-3">
+        {INSTAGRAM_POSTS.map((url, i) => (
+          <li>
+            <a href={url} target="_blank" rel="noopener" class="btn btn-outline">
+              <Icono nombre="instagram" /> Ver publicación {i + 1} en Instagram
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
   )}
 

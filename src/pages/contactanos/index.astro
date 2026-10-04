@@ -3,11 +3,11 @@ import Base from '../../layouts/Base.astro';
 import Icono from '../../components/Icono.astro';
 import BandaCTA from '../../components/BandaCTA.astro';
 import { pagina } from '../../lib/paginas';
-import { NEGOCIO, LINEAS, REDES, formatear, whatsapp } from '../../data/contacto';
+import { NEGOCIO, LINEAS, REDES, HORARIO, MAPA_EMBED, formatear, whatsapp } from '../../data/contacto';
 
 const { data: d } = await pagina('contactanos');
 const direccionMapa = `${NEGOCIO.direccion}, ${NEGOCIO.ciudad}, Colombia`;
-const mapa = `https://www.google.com/maps?q=${encodeURIComponent(direccionMapa)}&output=embed`;
+const mapa = MAPA_EMBED;
 const mapaExterno = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(direccionMapa)}`;
 ---
 <Base title={d.title} description={d.description} ruta={d.ruta} og={d.og} whatsapp={d.whatsapp}>
@@ -18,12 +18,12 @@ const mapaExterno = `https://www.google.com/maps/search/?api=1&query=${encodeURI
   </section>
 
   <section class="contenedor mt-14" aria-labelledby="lineas-titulo">
-    <h2 id="lineas-titulo" class="sr-only">Líneas de WhatsApp</h2>
+    <h2 id="lineas-titulo" class="sr-only">Nuestras comerciales por WhatsApp</h2>
     <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {LINEAS.map((l) => (
         <li class="revelar bg-surface border-border flex flex-col rounded-[22px] border p-7">
-          <p class="etiqueta">{l.principal ? 'Línea principal' : 'Asesoría comercial'}</p>
-          <p class="mt-3 text-2xl font-black">{l.asesora || 'WhatsApp'}</p>
+          <p class="etiqueta">{l.principal ? 'Línea principal' : 'Asesora comercial'}</p>
+          <h3 class="mt-3 text-2xl font-black">{l.asesora || 'WhatsApp'}</h3>
           <p class="text-text-muted mt-1 text-lg font-semibold">{formatear(l.numero)}</p>
           <a href={whatsapp(d.whatsapp, l.numero)} target="_blank" rel="noopener" class="btn btn-accent mt-6">
             <Icono nombre="whatsapp" /> Escribir por WhatsApp
@@ -39,11 +39,17 @@ const mapaExterno = `https://www.google.com/maps/search/?api=1&query=${encodeURI
       <h2 id="visitanos-titulo" class="mt-3 text-3xl font-black">Dirección</h2>
       <p class="text-text-muted mt-4 flex gap-3 text-lg">
         <Icono nombre="ubicacion" class="text-accent mt-1 h-6 w-6 shrink-0" />
-        <span>{NEGOCIO.direccion}<br />{NEGOCIO.barrio} · {NEGOCIO.ciudad}</span>
+        <span>{NEGOCIO.direccion}<br />{NEGOCIO.barrio} · {NEGOCIO.ciudad}<br /><span class="text-text-subtle">{NEGOCIO.nota}</span></span>
       </p>
       <a href={mapaExterno} target="_blank" rel="noopener" class="btn btn-outline mt-6">Abrir en Google Maps</a>
+      <h2 class="mt-10 text-xl font-extrabold">Horarios de atención</h2>
+      <dl class="text-text-muted mt-3 space-y-1">
+        {HORARIO.map((h) => (
+          <div class="flex flex-wrap gap-x-2"><dt class="text-text font-semibold">{h.dias}:</dt><dd>{h.horas}</dd></div>
+        ))}
+      </dl>
       <h2 class="mt-10 text-xl font-extrabold">Síguenos</h2>
-      <ul class="mt-4 flex gap-2">
+      <ul class="mt-4 flex flex-wrap gap-2">
         {REDES.map((r) => (
           <li>
             <a href={r.url} target="_blank" rel="noopener" aria-label={r.nombre} class="border-border text-text-muted hover:border-accent hover:text-accent inline-flex h-12 w-12 items-center justify-center rounded-full border transition-colors">

@@ -2,23 +2,24 @@
 ruta: /mobiliario-rustico-para-eventos/
 tipo: servicio
 orden: 4
-title: Mobiliario rústico para eventos en Bogotá
-description: Alquiler de mobiliario rústico para eventos en Bogotá. Salas en madera y salas rústicas para crear un ambiente cálido y acogedor en tu evento.
-h1: Mobiliario rústico para eventos en Bogotá
-etiqueta: Mobiliario rústico
-intro: Dale encanto a tu evento con mobiliario rústico de alta calidad, pensado especialmente para eventos con un ambiente acogedor.
+title: "Mobiliario rústico para eventos | Latin Audiovisuales"
+description: "¡Dale encanto a tus eventos con nuestro mobiliario rústico de alta calidad en Latin! Contáctanos por WhatsApp: 310 8609114."
+h1: "Mobiliario rústico para eventos en Bogotá"
+etiqueta: "Mobiliario rústico"
+intro: "Agrega encanto a tus eventos con nuestro mobiliario rústico de alquiler."
 nombre: Mobiliario rústico
-resumen: Salas en madera y salas rústicas de alta calidad para eventos con un ambiente cálido y acogedor.
+resumen: "Mobiliario rústico de alta calidad para quienes buscan un ambiente acogedor y campestre."
 portada: renta-salas-en-madera-eventos-bogota.jpg
 carpeta: mobiliario-rustico
 og: mobiliario-rustico
-whatsapp: Hola, quiero cotizar alquiler de mobiliario rústico para mi evento.
+whatsapp: "Hola, quiero cotizar alquiler de mobiliario rústico para mi evento."
+videos:
+  - { id: q_plMYlBqio, titulo: Latin Audiovisuales — video 1 }
+  - { id: pkU0XEj0WO0, titulo: Latin Audiovisuales — video 2 }
 ---
 
-## Ambiente cálido y rústico
+## Mobiliario rústico
 
-Nos especializamos en mobiliario rústico para darle encanto a tus eventos: mobiliario de alta calidad diseñado para eventos especiales con un ambiente acogedor y rústico.
+En Latin, nos especializamos en brindar mobiliario de alta calidad para eventos especiales, y nuestro mobiliario es la opción perfecta para aquellos que buscan un ambiente acogedor y campestre.
 
-- Alquiler de salas en madera
-- Salas rústicas para eventos en Bogotá
-- Mobiliario en madera para eventos
+No dejes pasar la oportunidad de agregar ese toque rústico y encantador a tus eventos.

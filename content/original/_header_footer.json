@@ -1,0 +1,186 @@
+{
+  "header": [
+    {
+      "tipo": "imagen",
+      "archivo": "cropped-logo-latin-dj.png",
+      "url": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+      "alt": "Logo Latin DJ"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Inicio"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Eventos Empresariales"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Eventos Sociales"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Alquileres Mobiliario Mobiliario Lounge Mobiliario Rústico Sillas & Mesas Pantallas & Video Wall Sonido e iluminación Pistas Led"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Galería"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "cropped-logo-latin-dj.png",
+      "url": "https://ltndj.com/wp-content/uploads/2018/03/cropped-Logo-Latin-DJ.png",
+      "alt": "Logo Latin DJ"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Inicio"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Eventos Empresariales"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Eventos Sociales"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Alquileres Mobiliario Mobiliario Lounge Mobiliario Rústico Sillas & Mesas Pantallas & Video Wall Sonido e iluminación Pistas Led"
+    },
+    {
+      "tipo": "item_lista",
+      "texto": "Galería"
+    }
+  ],
+  "footer": [
+    {
+      "tipo": "parrafo",
+      "texto": "©2025 Todos los Derechos Reservados."
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Neve | Funciona gracias a WordPress"
+    }
+  ],
+  "enlaces_header": [
+    {
+      "texto": "Saltar al contenido",
+      "href": "https://ltndj.com/#content"
+    },
+    {
+      "texto": "Producción de Eventos Sociales y Empresariales",
+      "href": "https://ltndj.com/"
+    },
+    {
+      "texto": "Inicio",
+      "href": "https://ltndj.com/"
+    },
+    {
+      "texto": "Eventos Empresariales",
+      "href": ""
+    },
+    {
+      "texto": "Eventos Sociales",
+      "href": ""
+    },
+    {
+      "texto": "Alquileres",
+      "href": ""
+    },
+    {
+      "texto": "Mobiliario",
+      "href": ""
+    },
+    {
+      "texto": "Mobiliario Lounge",
+      "href": "https://ltndj.com/alquiler-de-mobiliario-para-eventos/"
+    },
+    {
+      "texto": "Mobiliario Rústico",
+      "href": "https://ltndj.com/mobiliario-rustico-para-eventos/"
+    },
+    {
+      "texto": "Sillas & Mesas",
+      "href": "https://ltndj.com/sillas-y-mesas-para-eventos/"
+    },
+    {
+      "texto": "Pantallas & Video Wall",
+      "href": "https://ltndj.com/alquiler-de-videowall-bogota/"
+    },
+    {
+      "texto": "Sonido e iluminación",
+      "href": "https://ltndj.com/sonido-e-iluminacion/"
+    },
+    {
+      "texto": "Pistas Led",
+      "href": "https://ltndj.com/alquiler-de-pistas-de-baile-led-bogota/"
+    },
+    {
+      "texto": "Galería",
+      "href": ""
+    },
+    {
+      "texto": "Producción de Eventos Sociales y Empresariales",
+      "href": "https://ltndj.com/"
+    },
+    {
+      "texto": "Inicio",
+      "href": "https://ltndj.com/"
+    },
+    {
+      "texto": "Eventos Empresariales",
+      "href": ""
+    },
+    {
+      "texto": "Eventos Sociales",
+      "href": ""
+    },
+    {
+      "texto": "Alquileres",
+      "href": ""
+    },
+    {
+      "texto": "Mobiliario",
+      "href": ""
+    },
+    {
+      "texto": "Mobiliario Lounge",
+      "href": "https://ltndj.com/alquiler-de-mobiliario-para-eventos/"
+    },
+    {
+      "texto": "Mobiliario Rústico",
+      "href": "https://ltndj.com/mobiliario-rustico-para-eventos/"
+    },
+    {
+      "texto": "Sillas & Mesas",
+      "href": "https://ltndj.com/sillas-y-mesas-para-eventos/"
+    },
+    {
+      "texto": "Pantallas & Video Wall",
+      "href": "https://ltndj.com/alquiler-de-videowall-bogota/"
+    },
+    {
+      "texto": "Sonido e iluminación",
+      "href": "https://ltndj.com/sonido-e-iluminacion/"
+    },
+    {
+      "texto": "Pistas Led",
+      "href": "https://ltndj.com/alquiler-de-pistas-de-baile-led-bogota/"
+    },
+    {
+      "texto": "Galería",
+      "href": ""
+    }
+  ],
+  "enlaces_footer": [
+    {
+      "texto": "Neve",
+      "href": "https://themeisle.com/themes/neve/"
+    },
+    {
+      "texto": "WordPress",
+      "href": "https://wordpress.org/"
+    }
+  ]
+}

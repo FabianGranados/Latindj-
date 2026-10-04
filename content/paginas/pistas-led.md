@@ -2,26 +2,37 @@
 ruta: /alquiler-de-pistas-de-baile-led-bogota/
 tipo: servicio
 orden: 0
-title: Alquiler de pistas de baile LED en Bogotá
-description: Alquiler de pistas de baile LED en Bogotá para eventos de lujo. Pistas iluminadas de hasta 40 m² con operario, montaje y desmontaje incluidos.
-h1: Alquiler de pistas de baile LED en Bogotá
-etiqueta: Pistas de baile LED
-intro: Alquiler de pistas de baile LED en Bogotá para eventos de lujo. Las mejores pistas de baile iluminadas para fiestas y eventos, dentro y fuera de la ciudad.
+title: "Alquiler de pistas de baile led | Latin Audiovisuales"
+description: "Alquiler de pista de baile led para eventos en bogota, contamos con 40 metros cuadrados y el mejor show para que tu evento sea el mejor. Comunicate con nuestras comerciales por WhatsApp 3003108492."
+h1: "Alquiler de pistas de baile LED en Bogotá"
+etiqueta: "Pista de baile LED Infinity"
+intro: "Alquiler de pistas de baile led en Bogotá para eventos de lujo, contamos con la mejor pista iluminada en led para sus fiestas y eventos, dentro y fuera de la ciudad, un show inolvidable para tu evento."
 nombre: Pistas de baile LED
-resumen: Pistas de baile iluminadas de hasta 40 m² para eventos de lujo, con operario, montaje y desmontaje.
+resumen: "La mejor pista iluminada en led para fiestas y eventos de lujo, dentro y fuera de la ciudad."
 portada: alquiler-de-tarimas-y-pisos-para-eventos.jpg
 carpeta: pistas-led
 og: pistas-led
-whatsapp: Hola, quiero cotizar alquiler de pistas de baile LED para mi evento.
+whatsapp: "Hola, quiero cotizar alquiler de pistas de baile LED para mi evento."
 ---
 
-## Pistas iluminadas para eventos de lujo
+## Pista de baile LED Infinity
 
-- Pistas de baile de hasta 40 metros cuadrados
-- Shows profesionales
-- Servicio dentro y fuera de Bogotá
+También se puede usar como pasarela o escenario para artistas brindando una ambientación moderna y novedosa, puedes contratar pistas en diferentes dimensiones y configuraciones.
 
-## Qué incluye el alquiler
+### Pistas con un sistema:
 
-- Operario
-- Logística de montaje y desmontaje
+- Módulos de 50 cm²
+- Pista LED Infinity
+
+## Políticas de alquiler
+
+- Diligenciar orden de servicio con las indicaciones de entrega.
+- Para garantizar tu reserva debes realizar un anticipo con el 50%.
+- El transporte a la ciudad de Bogotá está incluido.
+- Servicio de alquiler con operador incluido.
+- Servicio de logística (Montaje y Desmontaje).
+
+## Horarios de atención
+
+- Lunes a Viernes: 8:00 a.m. a 5:00 p.m.
+- Sábados: 8:00 a.m. a 1:00 p.m.

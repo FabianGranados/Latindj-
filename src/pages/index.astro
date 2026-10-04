@@ -11,6 +11,17 @@ import { whatsapp, MENSAJES } from '../data/contacto';
 
 const { data: d } = await pagina('inicio');
 const lista = await servicios();
+const todos = [
+  'Mobiliario Lounge',
+  'Mobiliario Rústico',
+  'Mobiliario Industrial',
+  'Mobiliario Picnic',
+  'Separadores de Fila',
+  'Calefactores de Ambiente',
+  'Pantallas LED',
+  'Sonido e Iluminación',
+  'Pistas de baile LED',
+];
 const hero = imagen('pistas-led', 'pistas-de-baile-en-bogota.webp');
 ---
 <Base title={d.title} description={d.description} ruta={d.ruta} og={d.og}>
@@ -19,7 +30,9 @@ const hero = imagen('pistas-led', 'pistas-de-baile-en-bogota.webp');
       <div>
         <p class="etiqueta">{d.etiqueta}</p>
         <h1 class="h1 mt-4">{d.h1}</h1>
-        <p class="text-text-muted mt-6 max-w-xl text-lg sm:text-[19px]">{d.intro}</p>
+        <p class="text-text-muted mt-6 max-w-xl text-lg sm:text-[19px]">
+          {d.intro} Pistas de baile LED, pantallas y videowall, sonido e iluminación y mobiliario lounge y rústico.
+        </p>
         <div class="mt-9 flex flex-col gap-3 sm:flex-row">
           <a href={whatsapp(MENSAJES.general)} target="_blank" rel="noopener" class="btn btn-accent">
             <Icono nombre="whatsapp" /> Cotizar ahora
@@ -51,10 +64,18 @@ const hero = imagen('pistas-led', 'pistas-de-baile-en-bogota.webp');
       <p class="etiqueta">Alquileres</p>
       <h2 id="servicios-titulo" class="h2 mt-3">Nuestros servicios</h2>
       <p class="text-text-muted mt-4 text-lg">
-        Todo lo que tu evento necesita en un solo lugar: mobiliario, pantallas, sonido, iluminación y pistas de baile LED en Bogotá.
+        Sonido e iluminación profesional, pantallas, pistas de baile LED y mobiliario para eventos sociales y empresariales en Bogotá.
       </p>
     </div>
     <div class="mt-12"><GrillaServicios servicios={lista} /></div>
+    <div class="mt-12">
+      <h3 class="etiqueta !text-text-subtle">Todo lo que alquilamos</h3>
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {todos.map((t) => (
+          <li class="bg-surface border-border text-text-muted rounded-full border px-4 py-2 text-[15px] font-semibold">{t}</li>
+        ))}
+      </ul>
+    </div>
   </section>
 
   <BandaCTA />

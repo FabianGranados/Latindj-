@@ -10,8 +10,9 @@ export const NEGOCIO = {
   region: 'Bogotá D.C.',
   pais: 'CO',
   email: 'servicioslatindj@hotmail.com',
-  // Etiqueta de Google (gtag). Verificar contra el HTML del sitio anterior.
+  // Etiqueta de Google (gtag), tomada del HTML del sitio anterior.
   googleTag: 'GT-K58Q95RQ',
+  nota: 'Cita previa',
 };
 
 export interface Linea {
@@ -22,11 +23,15 @@ export interface Linea {
   principal?: boolean;
 }
 
-// TODO: asignar el nombre de cada asesora (LORENA / VANESSA) a su número.
 export const LINEAS: Linea[] = [
-  { numero: '3108609114', asesora: '', principal: true },
-  { numero: '3016003031', asesora: '' },
-  { numero: '3003108492', asesora: '' },
+  { numero: '3108609114', asesora: 'Lorena Rodríguez', principal: true },
+  { numero: '3016003031', asesora: 'Vanessa Camacho' },
+  { numero: '3003108492', asesora: 'Johanna Lugo' },
+];
+
+export const HORARIO = [
+  { dias: 'Lunes a Viernes', horas: '8:00 a.m. a 5:00 p.m.', schema: 'Mo-Fr 08:00-17:00' },
+  { dias: 'Sábados', horas: '8:00 a.m. a 1:00 p.m.', schema: 'Sa 08:00-13:00' },
 ];
 
 export const PRINCIPAL = LINEAS.find((l) => l.principal) ?? LINEAS[0];
@@ -49,8 +54,16 @@ export const MENSAJES = {
 export const REDES = [
   { nombre: 'Instagram', url: 'https://www.instagram.com/latinaudiovisuales/', icono: 'instagram' },
   { nombre: 'Facebook', url: 'https://www.facebook.com/ltndj/', icono: 'facebook' },
-  // Agregar aquí YouTube, Flickr y LinkedIn con la URL exacta del footer anterior:
-  // { nombre: 'YouTube', url: 'https://www.youtube.com/…', icono: 'youtube' },
-  // { nombre: 'Flickr', url: 'https://www.flickr.com/…', icono: 'flickr' },
-  // { nombre: 'LinkedIn', url: 'https://www.linkedin.com/…', icono: 'linkedin' },
+  { nombre: 'YouTube', url: 'https://www.youtube.com/watch?v=PKhrIeYVun4', icono: 'youtube' },
+  { nombre: 'Flickr', url: 'https://www.flickr.com/photos/latinaudiovisuales/', icono: 'flickr' },
+  { nombre: 'LinkedIn', url: 'https://www.linkedin.com/in/latin-audiovisuales', icono: 'linkedin' },
 ] as const;
+
+/** Publicaciones de Instagram que se mostraban en las páginas de servicio */
+export const INSTAGRAM_POSTS = [
+  'https://www.instagram.com/p/Bxx1JU7gJOB/',
+  'https://www.instagram.com/p/BV5daUOlWJ7/',
+];
+
+/** Mapa de Google (misma consulta del sitio anterior) */
+export const MAPA_EMBED = 'https://maps.google.com/maps?q=Calle%202b%20%23%2041%20A%2037%2C%20Bogot%C3%A1&t=m&z=15&output=embed&iwloc=near';

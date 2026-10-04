@@ -1,0 +1,144 @@
+{
+  "url": "https://ltndj.com/contactanos/",
+  "title": "Contáctenos latin dj - fiestas y eventos | Latin DJ",
+  "meta_description": "Fiestas y eventos bogota - whatsapp: 3108609114 Telefono: 5633851 E-mail: servicioslatindj@hotmail.com",
+  "og_title": "",
+  "og_description": "",
+  "og_image": "",
+  "canonical": "https://ltndj.com/contactanos/",
+  "robots": "max-image-preview:large",
+  "wa_links": [
+    "https://wa.me/573016003031",
+    "https://wa.me/573108609114"
+  ],
+  "youtube": [],
+  "mapas": [],
+  "instagram": [
+    "https://www.instagram.com/latinaudiovisuales/"
+  ],
+  "contenido": [
+    {
+      "tipo": "h5",
+      "texto": "COMUNÍCATE CON LATÍN AUDIOVISUALES"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "logo-latin-dj.png",
+      "url": "https://ltndj.com/wp-content/uploads/2019/12/Logo-Latin-DJ.png",
+      "alt": "Logo Latin DJ"
+    },
+    {
+      "tipo": "boton",
+      "texto": "PANTALLA LED",
+      "href": "https://ltndj.com/alquiler-de-videowall-bogota/"
+    },
+    {
+      "tipo": "boton",
+      "texto": "SONIDO",
+      "href": "https://ltndj.com/sonido-e-iluminacion/"
+    },
+    {
+      "tipo": "boton",
+      "texto": "PISTA LED",
+      "href": "https://ltndj.com/alquiler-de-pistas-de-baile-led-bogota/"
+    },
+    {
+      "tipo": "boton",
+      "texto": "MOBILIARIO",
+      "href": "https://ltndj.com/alquiler-de-mobiliario-para-eventos/"
+    },
+    {
+      "tipo": "boton",
+      "texto": "CONTÁCTANOS",
+      "href": "https://ltndj.com/contactanos/"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Nombre Completo (requerido)"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Correo Electrónico (requerido)"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Número Celular / WhatsApp (requerido)"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Datos del Evento Especifica el tipo de servicio, hora, fecha y lugar estimado para la realización de tu evento."
+    },
+    {
+      "tipo": "iframe",
+      "src": "https://maps.google.com/maps?q=Calle%202b%20%23%2041%20A%2037&t=m&z=10&output=embed&iwloc=near"
+    },
+    {
+      "tipo": "boton",
+      "texto": "COMUNÍCATE CON LATIN DJ",
+      "href": null
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Comunícate con nuestra comerciales."
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Dirección:Calle 2 b Nº 41 A 37, Barrio el Jazmín – Cita previa"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "WhatsApp: 300 310 8492 – 310 860 9114 – 301 600 3031"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "Sitio Web:www.ltndj.com"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "alquiler-de-tarimas-y-pisos-para-eventos.jpg",
+      "url": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-tarimas-y-pisos-para-eventos.jpg",
+      "alt": "alquiler de tarimas y pisos para eventos"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "alquiler-de-pantallas-led.jpg",
+      "url": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-pantallas-led.jpg",
+      "alt": "alquiler de pantallas led"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "alquiler-de-mobiliario-led-para-eventos.jpg",
+      "url": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mobiliario-led-para-eventos.jpg",
+      "alt": "alquiler de mobiliario led para eventos"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "alquiler-de-mesas-con-mantel-para-eventos.jpg",
+      "url": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-con-mantel-para-eventos.jpg",
+      "alt": "alquiler de mesas con mantel para eventos"
+    },
+    {
+      "tipo": "imagen",
+      "archivo": "alquiler-de-mesas-para-eventos-en-bogota.jpg",
+      "url": "https://ltndj.com/wp-content/uploads/2023/05/alquiler-de-mesas-para-eventos-en-bogota.jpg",
+      "alt": "alquiler de mesas para eventos en bogota"
+    },
+    {
+      "tipo": "h5",
+      "texto": "ESTAMOS UBICADOS EN:"
+    },
+    {
+      "tipo": "boton",
+      "texto": "Calle 2b # 41 a 37 - Bogotá",
+      "href": null
+    },
+    {
+      "tipo": "iframe",
+      "src": "https://maps.google.com/maps?q=cALLE%202B%20%23%2041%20A%2037&t=m&z=8&output=embed&iwloc=near"
+    },
+    {
+      "tipo": "parrafo",
+      "texto": "© 2023 Todos los Derechos Reservados. Diseño y Desarrollo Moon Key."
+    }
+  ]
+}

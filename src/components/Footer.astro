@@ -16,7 +16,7 @@ const anio = new Date().getFullYear();
       <p class="text-text-muted mt-5 max-w-sm">
         Mobiliario, sonido e iluminación, pistas de baile LED y pantallas para eventos sociales y empresariales en Bogotá.
       </p>
-      <ul class="mt-6 flex gap-2" aria-label="Redes sociales">
+      <ul class="mt-6 flex flex-wrap gap-2" aria-label="Redes sociales">
         {REDES.map((r) => (
           <li>
             <a href={r.url} target="_blank" rel="noopener" aria-label={r.nombre} class="border-border text-text-muted hover:border-accent hover:text-accent inline-flex h-12 w-12 items-center justify-center rounded-full border transition-colors">

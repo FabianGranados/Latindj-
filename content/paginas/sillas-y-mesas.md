@@ -2,24 +2,38 @@
 ruta: /sillas-y-mesas-para-eventos/
 tipo: servicio
 orden: 5
-title: Mesas y sillas para eventos en Bogotá
-description: Alquiler de mesas y sillas para eventos en Bogotá. Sillas Tiffany, mesas redondas y altas, tablones y manteles para eventos sociales y empresariales.
-h1: Mesas y sillas para eventos en Bogotá
-etiqueta: Sillas y mesas
-intro: Crea los mejores eventos con el respaldo de un mobiliario de calidad. Alquiler de mesas, sillas y manteles para eventos en Bogotá.
+# Title original roto ("Sillas y Mesas para Eventos |") y description vacía: propuestos nuevos.
+title: "Sillas y mesas para eventos en Bogotá | Latin DJ"
+description: "Alquiler de sillas y mesas para eventos en Bogotá. Sillas tiffany, mesas y sillas cocteleras, manteles spandex y más. Cotiza por WhatsApp 310 8609114."
+h1: "Mesas y sillas para eventos en Bogotá"
+etiqueta: "Sillas y mesas"
+intro: "Adecuamos y ambientamos tus espacios, ofrecemos el servicio de alquiler de mobiliario para fiestas y eventos en Bogotá."
 nombre: Sillas y mesas
-resumen: Sillas Tiffany, mesas redondas, mesas altas y manteles para eventos sociales, empresariales y conferencias.
-portada: alquiler-de-sillas-para-conferencias-en-bogota.jpg
+resumen: "Sillas tiffany, sillas y mesas cocteleras, manteles spandex y sillas gerenciales e interlocutoras."
+portada: alquiler-de-mesas-en-bogota.jpg
 carpeta: sillas-y-mesas
 og: sillas-y-mesas
-whatsapp: Hola, quiero cotizar alquiler de sillas y mesas para mi evento.
+whatsapp: "Hola, quiero cotizar alquiler de sillas y mesas para mi evento."
+videos:
+  - { id: q_plMYlBqio, titulo: Latin Audiovisuales — video 1 }
+  - { id: pkU0XEj0WO0, titulo: Latin Audiovisuales — video 2 }
 ---
 
-## Mobiliario para tu evento
+## Mesas y sillas
 
-- Mesas y sillas para eventos
-- Sillas Tiffany
-- Mesas redondas
-- Mesas altas
-- Mesas con mantel
-- Manteles para eventos
+Contamos con nuestra exclusiva y moderna colección de:
+
+- Sillas y mesas cocteleras
+- Sillas tiffany
+- Manteles spandex
+- Salas lounge blancas y negras
+- Sofás
+- Barras de coctel
+- Poltronas
+- Mobiliario para ferias
+- Separadores de fila
+- Sillas gerenciales e interlocutoras
+
+## Ideal para todo tipo de eventos
+
+Cumpleaños, bodas, fiestas de 15 años, fiestas corporativas, fiestas empresariales, fiestas sociales, lanzamientos de productos, stands, eventos de ferias, eventos de conferencias, etc.
